@@ -179,8 +179,3 @@ plt.savefig(
 )
 
 plt.show()
-# In[ ]:
-
-
-
-
