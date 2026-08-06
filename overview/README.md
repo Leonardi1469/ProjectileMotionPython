@@ -62,9 +62,7 @@ python three_models_comparison.py
 
 The PDF version of the comparison figure can be downloaded here.
 
-<!--
 [Download PDF](three_models_comparison.pdf)
--->
 
 ---
 
