@@ -26,11 +26,9 @@ Three projectile-motion models with increasing mathematical and computational co
 
 The following figure compares the trajectories predicted by the three projectile-motion models using identical initial conditions. It provides an overview of how air resistance progressively modifies the projectile trajectory.
 
-<!-- Insert the comparison figure here -->
 
-<!--
 ![Comparison of the three projectile-motion models](three_models_comparison.png)
--->
+
 
 The ideal model produces the well-known parabolic trajectory. The linear-drag model still admits an exact analytical solution, although the trajectory is no longer parabolic. In contrast, the quadratic-drag model generally does not possess a closed-form analytical solution and therefore requires numerical integration.
 
