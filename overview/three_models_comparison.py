@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[12]:
-
-
 # ============================================================
 # Projectile Motion in Python
 # Comparison of the three projectile-motion models
