@@ -34,7 +34,7 @@ The ideal model produces the well-known parabolic trajectory. The linear-drag mo
 
 ---
 
-## Python program
+## Python code
 
 | Program | Description |
 |:--------|:------------|
