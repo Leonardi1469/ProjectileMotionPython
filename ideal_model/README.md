@@ -18,6 +18,7 @@ The following assumptions are considered:
 - the motion takes place close to Earth's surface;
 - air resistance is neglected;
 - the initial position is
+- 
 $$
 x(0)=0,
 \qquad
