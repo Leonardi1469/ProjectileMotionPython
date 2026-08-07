@@ -118,7 +118,7 @@ $$
 The initial condition
 
 $$
-v_x(0)=v_0\cos\theta
+v_x(0)=v_0\cos(\theta)
 $$
 
 implies
@@ -163,7 +163,7 @@ Thus, the horizontal position is
 
 $$
 \boxed{
-x(t)=v_0\cos\theta\,t.
+x(t)=v_0\cos\theta\;t.
 }
 $$
 
