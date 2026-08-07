@@ -13,21 +13,17 @@ Although this is one of the simplest models in classical mechanics, it provides 
 A projectile is launched from the origin with initial speed $v_0$ and launch angle $\theta$, measured with respect to the horizontal axis.
 
 The following assumptions are considered:
-
 - the projectile is treated as a point particle;
 - gravitational acceleration is constant;
 - the motion takes place close to Earth's surface;
 - air resistance is neglected;
 - the initial position is
-
 $$
 x(0)=0,
 \qquad
 y(0)=0;
 $$
-
 - the initial velocity components are
-
 $$
 v_x(0)=v_0\cos\theta,
 \qquad
@@ -41,45 +37,35 @@ Under these assumptions, the only force acting on the projectile is its weight.
 ## ⚙️ 2. Governing equations
 
 According to Newton's second law,
-
 $$
 m\frac{d^2\mathbf{r}}{dt^2}=\mathbf{F},
 $$
-
 where
-
 $$
 \mathbf{r}(t)=x(t) \hat{\mathbf{x}} + y(t) \hat{\mathbf{y}}.
 $$
 
 For the ideal model, the force is
-
 $$
-\mathbf{F}=-mg\,\hat{\mathbf{y}}.
+\mathbf{F}=-mg\hat{\mathbf{y}}.
 $$
 
 Therefore,
-
 $$
 m\frac{d^2x}{dt^2}=0,
 $$
-
 and
-
 $$
 m\frac{d^2y}{dt^2}=-mg.
 $$
 
 After dividing by the mass, the governing equations become
-
 $$
 \boxed{
 \frac{d^2x}{dt^2}=0
 }
 $$
-
 and
-
 $$
 \boxed{
 \frac{d^2y}{dt^2}=-g.
