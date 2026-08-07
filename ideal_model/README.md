@@ -28,9 +28,9 @@ $$
 - the initial velocity components are
   
 $$
-v_x(0)=v_0\cos\theta,
+v_x(0)=v_0 \cos(\theta),
 \qquad
-v_y(0)=v_0\sin\theta.
+v_y(0)=v_0 \sin(\theta).
 $$
 
 Under these assumptions, the only force acting on the projectile is its weight.
