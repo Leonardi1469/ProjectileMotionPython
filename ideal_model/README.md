@@ -298,10 +298,7 @@ gives
 $$
 y(x)=
 v_0\sin(\theta)
-\left(
-\frac{x}{v_0\cos(\theta)}
-\right)
--
+\left( \frac{x}{v_0\cos(\theta)} \right) -
 \frac{g}{2}
 \left(
 \frac{x}{v_0\cos(\theta)}
