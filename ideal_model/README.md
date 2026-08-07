@@ -278,27 +278,25 @@ To obtain the trajectory directly as a function of the horizontal position, time
 From
 
 $$
-x(t)=v_0\cos\theta\,t,
+x(t)=v_0\cos(\theta)t,
 $$
 
 we solve for time:
 
 $$
-t=\frac{x}{v_0\cos\theta}.
+t=\frac{x}{v_0\cos(\theta)}.
 $$
 
 Substituting this expression into
 
 $$
-y(t)=v_0\sin\theta\,t-\frac{1}{2}gt^2,
+y(t)=v_0\sin(\theta)t-\frac{1}{2}gt^2,
 $$
 
 we obtain
 
 $$
-y(x)
-=
-v_0\sin\theta
+y(x) = v_0\sin(\theta)
 \left(
 \frac{x}{v_0\cos\theta}
 \right)
