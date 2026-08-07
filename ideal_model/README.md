@@ -555,13 +555,13 @@ Both solutions are superposed in the same figures, allowing a direct comparison 
 
 ## 📈 6. Generated figures
 
-The program generates the following figures.
+The Python program generates the figures presented below, comparing the analytical solution (continuous curves) with the numerical integration (circular markers). The excellent agreement between both approaches validates the numerical implementation of the ideal projectile model.
 
 ### Figure 1. Variation of the launch angle
 
 The launch angle is varied while the initial speed remains fixed.
 
-Continuous curves correspond to the analytical solution, whereas discrete markers represent the numerical solution obtained from the integration of the governing differential equations.
+The figure shows the projectile trajectories for different launch angles. Continuous curves correspond to the analytical solution, whereas circular markers represent the numerical integration of the governing differential equations. The comparison demonstrates the excellent agreement between both approaches over the entire trajectory.
 
 ![Variation of the launch angle](ideal_angle_variation.png)
 
@@ -575,7 +575,7 @@ High-resolution PDF:
 
 The initial speed is varied while the launch angle remains fixed.
 
-Continuous curves correspond to the analytical solution, whereas discrete markers represent the numerical solution obtained from the integration of the governing differential equations.
+The figure shows the projectile trajectories for different initial speeds. Continuous curves correspond to the analytical solution, whereas circular markers represent the numerical integration of the governing differential equations. As in the previous figure, the numerical results accurately reproduce the analytical solution throughout the projectile motion.
 
 ![Variation of the initial speed](ideal_velocity_variation.png)
 
