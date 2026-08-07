@@ -198,33 +198,33 @@ $$
 The initial condition
 
 $$
-v_y(0)=v_0\sin\theta
+v_y(0)=v_0\sin(\theta)
 $$
 
 implies
 
 $$
-C_3=v_0\sin\theta.
+C_3=v_0\sin(\theta).
 $$
 
 Therefore,
 
 $$
 \boxed{
-v_y(t)=v_0\sin\theta-gt.
+v_y(t)=v_0\sin(\theta)-gt.
 }
 $$
 
 Since
 
 $$
-\frac{dy}{dt}=v_0\sin\theta-gt,
+\frac{dy}{dt}=v_0\sin(\theta)-gt,
 $$
 
 a second integration gives
 
 $$
-y(t)=v_0\sin\theta\,t-\frac{1}{2}gt^2+C_4.
+y(t)=v_0\sin(\theta)t-\frac{1}{2}gt^2+C_4.
 $$
 
 Using
@@ -243,7 +243,7 @@ Thus, the vertical position is
 
 $$
 \boxed{
-y(t)=v_0\sin\theta\,t-\frac{1}{2}gt^2.
+y(t)=v_0\sin(\theta)t-\frac{1}{2}gt^2.
 }
 $$
 
