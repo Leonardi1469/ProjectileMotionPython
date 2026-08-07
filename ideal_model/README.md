@@ -124,27 +124,27 @@ $$
 implies
 
 $$
-C_1=v_0\cos\theta.
+C_1 = v_0 \cos(\theta).
 $$
 
 Therefore,
 
 $$
 \boxed{
-v_x(t)=v_0\cos\theta.
+v_x(t) = v_0 \cos(\theta).
 }
 $$
 
 Since
 
 $$
-\frac{dx}{dt}=v_0\cos\theta,
+\frac{dx}{dt} = v_0 \cos(\theta),
 $$
 
 a second integration gives
 
 $$
-x(t)=v_0\cos\theta\,t+C_2.
+x(t) = v_0 \cos(\theta) t + C_2.
 $$
 
 Using
@@ -163,7 +163,7 @@ Thus, the horizontal position is
 
 $$
 \boxed{
-x(t)=v_0\cos\theta\;t.
+x(t) = v_0 (\cos\theta) t.
 }
 $$
 
