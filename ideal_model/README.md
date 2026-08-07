@@ -49,7 +49,7 @@ $$
 where
 
 $$
-\mathbf{r}(t)=x(t)\,\hat{\mathbf{x}}+y(t)\,\hat{\mathbf{y}}.
+\mathbf{r}(t)=x(t) \hat{\mathbf{x}} + y(t) \hat{\mathbf{y}}.
 $$
 
 For the ideal model, the force is
