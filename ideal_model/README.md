@@ -44,6 +44,7 @@ According to Newton's second law,
 $$
 m\frac{d^2\mathbf{r}}{dt^2}=\mathbf{F},
 $$
+
 where
 
 $$
@@ -61,6 +62,7 @@ Therefore,
 $$
 m\frac{d^2x}{dt^2}=0,
 $$
+
 and
 
 $$
