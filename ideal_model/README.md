@@ -271,7 +271,7 @@ These two equations describe the trajectory parametrically, with time $t$ as the
 
 ---
 
-### Cartesian trajectory \(y(x)\)
+### Cartesian trajectory $y(x)$
 
 To obtain the trajectory directly as a function of the horizontal position, time is eliminated from the parametric equations.
 
