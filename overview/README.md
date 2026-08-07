@@ -6,7 +6,7 @@ This repository accompanies the article
 
 > **A computational and pedagogical framework for projectile motion using Python visualizations.**
 
-Its objective is to provide a reproducible computational framework for studying projectile motion using Python. The repository combines analytical derivations, numerical simulations, and graphical visualizations to facilitate the understanding of projectile dynamics under different physical assumptions.
+Its purpose is to provide a reproducible computational framework for studying projectile motion through analytical solutions, numerical simulations, and Python visualizations. The repository is organized as a companion resource to the article, allowing readers to reproduce every figure presented in the manuscript while exploring the corresponding theoretical and computational developments.
 
 Three projectile-motion models with increasing mathematical and computational complexity are considered throughout this repository.
 
@@ -20,21 +20,21 @@ Three projectile-motion models with increasing mathematical and computational co
 | Linear air resistance | ✅ | ✅ |
 | Quadratic air resistance | ❌ | ✅ |
 
+The progression from the ideal model to quadratic air resistance illustrates how increasing physical realism also increases the mathematical complexity of the problem. While the first two models admit analytical solutions, the quadratic-drag model generally requires numerical integration.
+
 ---
 
 ## Comparison of the three projectile-motion models
 
-The following figure compares the trajectories predicted by the three projectile-motion models using identical initial conditions. It provides an overview of how air resistance progressively modifies the projectile trajectory.
-
+The figure below compares the trajectories predicted by the three projectile-motion models using identical initial conditions. It provides an overview of how air resistance progressively modifies the projectile trajectory.
 
 ![Comparison of the three projectile-motion models](three_models_comparison.png)
 
-
-The ideal model produces the well-known parabolic trajectory. The linear-drag model still admits an exact analytical solution, although the trajectory is no longer parabolic. In contrast, the quadratic-drag model generally does not possess a closed-form analytical solution and therefore requires numerical integration.
+The ideal model produces the familiar parabolic trajectory. When a drag force proportional to the velocity is included, the trajectory departs from a parabola but still admits an analytical solution. In contrast, the quadratic-drag model generally has no closed-form analytical solution, making numerical methods essential for describing the projectile motion.
 
 ---
 
-## Python code
+## 🐍 Python code
 
 | Program | Description |
 |:--------|:------------|
@@ -42,25 +42,9 @@ The ideal model produces the well-known parabolic trajectory. The linear-drag mo
 
 ---
 
-## How to run
+## 📄 High-resolution figure
 
-Install the required Python packages
-
-```bash
-pip install -r ../requirements.txt
-```
-
-Then execute
-
-```bash
-python three_models_comparison.py
-```
-
----
-
-## High-resolution figure
-
-The PDF version of the comparison figure can be downloaded here.
+The publication-quality version of the comparison figure is available below.
 
 [Download PDF](three_models_comparison.pdf)
 
@@ -68,7 +52,7 @@ The PDF version of the comparison figure can be downloaded here.
 
 ## Repository organization
 
-The remaining folders of the repository are organized according to the projectile-motion model being studied.
+The repository is organized according to the projectile-motion model being studied.
 
 | Folder | Contents |
 |:------|:---------|
@@ -76,10 +60,19 @@ The remaining folders of the repository are organized according to the projectil
 | `linear_drag` | Projectile motion with linear air resistance. |
 | `quadratic_drag` | Projectile motion with quadratic air resistance. |
 
-Each folder contains the theoretical formulation, documented Python implementations, numerical simulations, and the corresponding figures presented in the associated article.
+Each folder contains:
+
+- the physical description of the model;
+- the governing differential equations;
+- the analytical solution (when available);
+- the numerical formulation;
+- the documented Python implementation;
+- the figures reproduced in the accompanying article.
+
+Together, these folders provide a complete computational framework for reproducing all the results presented in the manuscript.
 
 ---
 
-## References
+## 📚 References
 
-The references associated with this overview will be incorporated as the repository is completed.
+The references associated with this overview will be incorporated after the accompanying manuscript is finalized.
