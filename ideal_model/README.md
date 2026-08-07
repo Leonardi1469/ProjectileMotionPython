@@ -10,7 +10,7 @@ Although this is one of the simplest models in classical mechanics, it provides 
 
 ## 📖 1. Physical description
 
-A projectile is launched from the origin with initial speed $v_0$ and launch angle \(\theta\), measured with respect to the horizontal axis.
+A projectile is launched from the origin with initial speed $v_0$ and launch angle $\theta$, measured with respect to the horizontal axis.
 
 The following assumptions are considered:
 
