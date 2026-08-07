@@ -57,15 +57,18 @@ $$
 $$
 
 Therefore,
+
 $$
 m\frac{d^2x}{dt^2}=0,
 $$
 and
+
 $$
 m\frac{d^2y}{dt^2}=-mg.
 $$
 
 After dividing by the mass, the governing equations become
+
 $$
 \boxed{
 \frac{d^2x}{dt^2}=0
