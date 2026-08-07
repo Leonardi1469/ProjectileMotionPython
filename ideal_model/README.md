@@ -311,8 +311,7 @@ $$
 v_0\sin(\theta)
 \left(
 \frac{x}{v_0\cos(\theta)}
-\right)
-=
+\right) =
 x\tan(\theta),
 $$
 
