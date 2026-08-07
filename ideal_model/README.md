@@ -255,7 +255,7 @@ The complete analytical solution is therefore
 
 $$
 \boxed{
-x(t)=v_0\cos\theta\,t
+x(t)=v_0\cos(\theta)t
 }
 $$
 
@@ -263,11 +263,11 @@ and
 
 $$
 \boxed{
-y(t)=v_0\sin\theta\,t-\frac{1}{2}gt^2.
+y(t)=v_0\sin(\theta)t-\frac{1}{2}gt^2.
 }
 $$
 
-These two equations describe the trajectory parametrically, with time \(t\) as the parameter.
+These two equations describe the trajectory parametrically, with time $t$ as the parameter.
 
 ---
 
