@@ -593,24 +593,6 @@ High-resolution PDF:
 
 ---
 
-## ▶️ 7. How to run the program
-
-Install the required packages from the repository root:
-
-```bash
-pip install -r requirements.txt
-```
-
-Then enter the `ideal_model` folder and execute
-
-```bash
-python ideal_projectile.py
-```
-
-The program automatically generates all PNG figures displayed in this repository together with their corresponding high-resolution PDF versions used in the accompanying article.
-
----
-
-## 📚 8. References
+## 📚 7. References
 
 Classical mechanics, projectile-motion, and numerical-method references will be incorporated after the theoretical section of the associated article is finalized.
