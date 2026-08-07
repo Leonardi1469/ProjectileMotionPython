@@ -40,15 +40,18 @@ Under these assumptions, the only force acting on the projectile is its weight.
 ## ⚙️ 2. Governing equations
 
 According to Newton's second law,
+
 $$
 m\frac{d^2\mathbf{r}}{dt^2}=\mathbf{F},
 $$
 where
+
 $$
 \mathbf{r}(t)=x(t) \hat{\mathbf{x}} + y(t) \hat{\mathbf{y}}.
 $$
 
 For the ideal model, the force is
+
 $$
 \mathbf{F}=-mg\hat{\mathbf{y}}.
 $$
