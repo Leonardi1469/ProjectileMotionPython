@@ -535,28 +535,33 @@ The agreement between both solutions provides a direct validation of the numeric
 
 ---
 
-## 🐍 5. Python codes
+## 🐍 5. Python code
+
+The Python implementation computes both the analytical and numerical solutions of the ideal projectile model. The analytical trajectory is obtained directly from the Cartesian equation,
+
+$$
+y(x)=x\tan(\theta)-\frac{g}{2v_0^2\cos^2(\theta)}x^2,
+$$
+
+whereas the numerical solution is obtained by integrating the governing differential equations using SciPy's `solve_ivp` function.
+
+Both solutions are superposed in the same figures, allowing a direct comparison between the exact analytical results (continuous lines) and the numerical integration (discrete markers).
 
 | Program | Description |
 |:---|:---|
-| `analytical_solution.py` | Computes the trajectory using the exact analytical expression $y(x)$. |
-| `numerical_solution.py` | Integrates the governing differential equations numerically. |
-| `analytical_numerical_comparison.py` | Compares the analytical and numerical trajectories in the same figures. |
-
-The comparison program generates two figures:
-
-1. variation of the launch angle $\theta$ for fixed $v_0$;
-2. variation of the initial speed $v_0$ for fixed $\theta$.
+| `ideal_projectile.py` | Computes the analytical and numerical solutions of the ideal projectile model and generates all figures associated with this section. |
 
 ---
 
 ## 📈 6. Generated figures
 
+The program generates the following figures.
+
 ### Figure 1. Variation of the launch angle
 
 The launch angle is varied while the initial speed remains fixed.
 
-Continuous curves correspond to the analytical solution, whereas numerical results are represented by discrete markers.
+Continuous curves correspond to the analytical solution, whereas discrete markers represent the numerical solution obtained from the integration of the governing differential equations.
 
 <!--
 ![Variation of the launch angle](ideal_angle_variation.png)
@@ -574,7 +579,7 @@ High-resolution PDF:
 
 The initial speed is varied while the launch angle remains fixed.
 
-Continuous curves correspond to the analytical solution, whereas numerical results are represented by discrete markers.
+Continuous curves correspond to the analytical solution, whereas discrete markers represent the numerical solution obtained from the integration of the governing differential equations.
 
 <!--
 ![Variation of the initial speed](ideal_velocity_variation.png)
@@ -588,7 +593,7 @@ High-resolution PDF:
 
 ---
 
-## ▶️ 7. How to run the programs
+## ▶️ 7. How to run the program
 
 Install the required packages from the repository root:
 
@@ -596,21 +601,13 @@ Install the required packages from the repository root:
 pip install -r requirements.txt
 ```
 
-Then enter the `ideal_model` folder and execute the desired program:
+Then enter the `ideal_model` folder and execute
 
 ```bash
-python analytical_solution.py
+python ideal_projectile.py
 ```
 
-```bash
-python numerical_solution.py
-```
-
-```bash
-python analytical_numerical_comparison.py
-```
-
-The programs generate PNG figures for visualization in GitHub and PDF figures for use in the associated article.
+The program automatically generates all PNG figures displayed in this repository together with their corresponding high-resolution PDF versions used in the accompanying article.
 
 ---
 
