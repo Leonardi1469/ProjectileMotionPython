@@ -298,7 +298,7 @@ we obtain
 $$
 y(x) = v_0\sin(\theta)
 \left(
-\frac{x}{v_0\cos\theta}
+\frac{x}{v_0\cos(\theta)}
 \right)
 -
 \frac{1}{2}g
