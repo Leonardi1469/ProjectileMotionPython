@@ -273,77 +273,77 @@ These two equations describe the trajectory parametrically, with time $t$ as the
 
 ### Cartesian trajectory $y(x)$
 
-To obtain the trajectory directly as a function of the horizontal position, time is eliminated from the parametric equations.
+To obtain the projectile trajectory as a function of the horizontal position, the time parameter is eliminated from the parametric equations.
 
-From
+From the horizontal motion,
 
 $$
 x(t)=v_0\cos(\theta)t,
 $$
 
-we solve for time:
+the time can be written as
 
 $$
 t=\frac{x}{v_0\cos(\theta)}.
 $$
 
-Substituting this expression into
+Substituting this expression into the vertical equation,
 
 $$
 y(t)=v_0\sin(\theta)t-\frac{1}{2}gt^2,
 $$
 
-we obtain
+gives
 
 $$
-y(x) = v_0\sin(\theta)
+y(x)=
+v_0\sin(\theta)
 \left(
 \frac{x}{v_0\cos(\theta)}
 \right)
 -
-\frac{1}{2}g
+\frac{g}{2}
 \left(
-\frac{x}{v_0\cos\theta}
+\frac{x}{v_0\cos(\theta)}
 \right)^2.
 $$
 
-Simplifying the first term,
+The first term simplifies as
 
 $$
-v_0\sin\theta
+v_0\sin(\theta)
 \left(
-\frac{x}{v_0\cos\theta}
+\frac{x}{v_0\cos(\theta)}
 \right)
 =
-x\tan\theta.
+x\tan(\theta),
 $$
 
-Simplifying the second term,
+whereas the second term becomes
 
 $$
-\frac{1}{2}g
+\frac{g}{2}
 \left(
-\frac{x}{v_0\cos\theta}
+\frac{x}{v_0\cos(\theta)}
 \right)^2
 =
-\frac{g}{2v_0^2\cos^2\theta}x^2.
+\frac{g}{2v_0^2\cos^2(\theta)}x^2.
 $$
 
-Therefore, the Cartesian trajectory is
+Therefore, the Cartesian equation of the trajectory is
 
 $$
 \boxed{
-y(x)
-=
-x\tan\theta
+y(x)=
+x\tan(\theta)
 -
-\frac{g}{2v_0^2\cos^2\theta}x^2.
+\frac{g}{2v_0^2\cos^2(\theta)}x^2.
 }
 $$
 
-This expression is quadratic in \(x\). Consequently, the trajectory of an ideal projectile is a parabola.
+Since the highest power of the independent variable is two, the trajectory is described by a quadratic function. Therefore, the path followed by an ideal projectile is a parabola.
 
-This analytical expression will be used to generate the continuous curves in the figures of this section.
+This analytical expression is used throughout this repository to generate the continuous curves shown in the figures corresponding to the ideal projectile model.
 
 ---
 
