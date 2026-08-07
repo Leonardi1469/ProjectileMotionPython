@@ -18,13 +18,15 @@ The following assumptions are considered:
 - the motion takes place close to Earth's surface;
 - air resistance is neglected;
 - the initial position is
-- 
+
 $$
 x(0)=0,
 \qquad
 y(0)=0;
 $$
+
 - the initial velocity components are
+  
 $$
 v_x(0)=v_0\cos\theta,
 \qquad
