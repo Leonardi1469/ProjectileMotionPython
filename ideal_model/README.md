@@ -13,6 +13,7 @@ Although this is one of the simplest models in classical mechanics, it provides 
 A projectile is launched from the origin with initial speed $v_0$ and launch angle $\theta$, measured with respect to the horizontal axis.
 
 The following assumptions are considered:
+
 - the projectile is treated as a point particle;
 - gravitational acceleration is constant;
 - the motion takes place close to Earth's surface;
@@ -20,17 +21,13 @@ The following assumptions are considered:
 - the initial position is
 
 $$
-x(0)=0,
-\qquad
-y(0)=0;
+x(0)=0,\qquad y(0)=0;
 $$
 
 - the initial velocity components are
-  
+
 $$
-v_x(0)=v_0 \cos(\theta),
-\qquad
-v_y(0)=v_0 \sin(\theta).
+v_x(0)=v_0\cos(\theta),\qquad v_y(0)=v_0\sin(\theta).
 $$
 
 Under these assumptions, the only force acting on the projectile is its weight.
@@ -48,22 +45,24 @@ $$
 where
 
 $$
-\mathbf{r}(t)=x(t) \hat{\mathbf{x}} + y(t) \hat{\mathbf{y}}.
+\mathbf{r}(t)=x(t)\hat{\mathbf{x}}+y(t)\hat{\mathbf{y}}.
 $$
 
-For the ideal model, the force is
+For the ideal model, the only force acting on the projectile is gravity:
 
 $$
 \mathbf{F}=-mg\hat{\mathbf{y}}.
 $$
 
-Therefore,
+Since gravity acts only in the vertical direction, the horizontal and vertical motions can be analyzed independently.
+
+The horizontal equation is
 
 $$
 m\frac{d^2x}{dt^2}=0,
 $$
 
-and
+whereas the vertical equation is
 
 $$
 m\frac{d^2y}{dt^2}=-mg.
@@ -72,15 +71,13 @@ $$
 After dividing by the mass, the governing equations become
 
 $$
-\boxed{
-\frac{d^2x}{dt^2}=0
-}
+\boxed{\frac{d^2x}{dt^2}=0}
 $$
+
 and
+
 $$
-\boxed{
-\frac{d^2y}{dt^2}=-g.
-}
+\boxed{\frac{d^2y}{dt^2}=-g}.
 $$
 
 The horizontal acceleration is zero, whereas the vertical acceleration is constant and directed downward.
@@ -124,27 +121,27 @@ $$
 implies
 
 $$
-C_1 = v_0 \cos(\theta).
+C_1=v_0\cos(\theta).
 $$
 
 Therefore,
 
 $$
-\boxed{
-v_x(t) = v_0 \cos(\theta).
-}
+\boxed{v_x(t)=v_0\cos(\theta)}.
 $$
+
+Thus, the horizontal velocity remains constant throughout the motion.
 
 Since
 
 $$
-\frac{dx}{dt} = v_0 \cos(\theta),
+\frac{dx}{dt}=v_0\cos(\theta),
 $$
 
 a second integration gives
 
 $$
-x(t) = v_0 \cos(\theta) t + C_2.
+x(t)=v_0\cos(\theta)t+C_2.
 $$
 
 Using
@@ -162,9 +159,7 @@ $$
 Thus, the horizontal position is
 
 $$
-\boxed{
-x(t) = v_0 (\cos\theta) t.
-}
+\boxed{x(t)=v_0\cos(\theta)t}.
 $$
 
 ---
@@ -210,10 +205,10 @@ $$
 Therefore,
 
 $$
-\boxed{
-v_y(t)=v_0\sin(\theta)-gt.
-}
+\boxed{v_y(t)=v_0\sin(\theta)-gt}.
 $$
+
+Unlike the horizontal component, the vertical velocity changes linearly with time due to gravity.
 
 Since
 
@@ -242,9 +237,7 @@ $$
 Thus, the vertical position is
 
 $$
-\boxed{
-y(t)=v_0\sin(\theta)t-\frac{1}{2}gt^2.
-}
+\boxed{y(t)=v_0\sin(\theta)t-\frac{1}{2}gt^2}.
 $$
 
 ---
@@ -254,26 +247,22 @@ $$
 The complete analytical solution is therefore
 
 $$
-\boxed{
-x(t)=v_0\cos(\theta)t
-}
+\boxed{x(t)=v_0\cos(\theta)t}
 $$
 
 and
 
 $$
-\boxed{
-y(t)=v_0\sin(\theta)t-\frac{1}{2}gt^2.
-}
+\boxed{y(t)=v_0\sin(\theta)t-\frac{1}{2}gt^2}.
 $$
 
-These two equations describe the trajectory parametrically, with time $t$ as the parameter.
+Together, these equations completely describe the projectile motion as a function of time.
 
 ---
 
 ### Cartesian trajectory $y(x)$
 
-To obtain the projectile trajectory as a function of the horizontal position, the time parameter is eliminated from the parametric equations.
+To obtain the projectile trajectory directly as a function of the horizontal position, the time parameter is eliminated from the parametric equations.
 
 From the horizontal motion,
 
@@ -296,50 +285,52 @@ $$
 gives
 
 $$
-y(x)=
-v_0\sin(\theta)
-\left( \frac{x}{v_0\cos(\theta)} \right) -
-\frac{g}{2}
-\left(
-\frac{x}{v_0\cos(\theta)}
-\right)^2.
+y(x)=v_0\sin(\theta)\left(\frac{x}{v_0\cos(\theta)}\right)-\frac{g}{2}\left(\frac{x}{v_0\cos(\theta)}\right)^2.
 $$
 
 The first term simplifies as
 
 $$
-v_0\sin(\theta)
-\left(
-\frac{x}{v_0\cos(\theta)}
-\right) =
-x\tan(\theta),
+v_0\sin(\theta)\left(\frac{x}{v_0\cos(\theta)}\right)=x\tan(\theta),
 $$
 
 whereas the second term becomes
 
 $$
-\frac{g}{2}
-\left(
-\frac{x}{v_0\cos(\theta)}
-\right)^2
-=
-\frac{g}{2v_0^2\cos^2(\theta)}x^2.
+\frac{g}{2}\left(\frac{x}{v_0\cos(\theta)}\right)^2=\frac{g}{2v_0^2\cos^2(\theta)}x^2.
 $$
 
 Therefore, the Cartesian equation of the trajectory is
 
 $$
-\boxed{
-y(x)=
-x\tan(\theta)
--
-\frac{g}{2v_0^2\cos^2(\theta)}x^2.
-}
+\boxed{y(x)=x\tan(\theta)-\frac{g}{2v_0^2\cos^2(\theta)}x^2}.
 $$
 
-Since the highest power of the independent variable is two, the trajectory is described by a quadratic function. Therefore, the path followed by an ideal projectile is a parabola.
+This expression has the general quadratic form
 
-This analytical expression is used throughout this repository to generate the continuous curves shown in the figures corresponding to the ideal projectile model.
+$$
+y(x)=Ax^2+Bx+C,
+$$
+
+with
+
+$$
+A=-\frac{g}{2v_0^2\cos^2(\theta)},
+$$
+
+$$
+B=\tan(\theta),
+$$
+
+and
+
+$$
+C=0.
+$$
+
+Since the highest power of the independent variable is two, the trajectory is a parabola. The coefficients of the parabola depend on the initial speed and the launch angle.
+
+This analytical expression is used to generate the continuous curves shown in the figures of the ideal projectile model and to compare them directly with the numerical solutions obtained from the governing differential equations.
 
 ---
 
@@ -351,25 +342,22 @@ $$
 y(T)=0.
 $$
 
-Using
+Using the vertical position,
 
 $$
-y(T)=v_0\sin\theta\,T-\frac{1}{2}gT^2,
+y(T)=v_0\sin(\theta)T-\frac{1}{2}gT^2,
 $$
 
 we obtain
 
 $$
-T
-\left(
-v_0\sin\theta-\frac{1}{2}gT
-\right)=0.
+T\left(v_0\sin(\theta)-\frac{gT}{2}\right)=0.
 $$
 
-The first solution,
+The solution
 
 $$
-T=0,
+T=0
 $$
 
 corresponds to the launch instant.
@@ -377,16 +365,14 @@ corresponds to the launch instant.
 The nonzero solution is
 
 $$
-\boxed{
-T=\frac{2v_0\sin\theta}{g}.
-}
+\boxed{T=\frac{2v_0\sin(\theta)}{g}}.
 $$
 
 ---
 
 ### Horizontal range
 
-The horizontal range is obtained by evaluating \(x(t)\) at the total flight time:
+The horizontal range is obtained by evaluating $x(t)$ at the total flight time:
 
 $$
 R=x(T).
@@ -395,26 +381,19 @@ $$
 Therefore,
 
 $$
-R
-=
-v_0\cos\theta
-\left(
-\frac{2v_0\sin\theta}{g}
-\right).
+R=v_0\cos(\theta)\left(\frac{2v_0\sin(\theta)}{g}\right).
 $$
 
-Using
+Using the identity
 
 $$
-2\sin\theta\cos\theta=\sin(2\theta),
+2\sin(\theta)\cos(\theta)=\sin(2\theta),
 $$
 
 we obtain
 
 $$
-\boxed{
-R=\frac{v_0^2}{g}\sin(2\theta).
-}
+\boxed{R=\frac{v_0^2}{g}\sin(2\theta)}.
 $$
 
 For a fixed initial speed, the maximum horizontal range occurs when
@@ -432,9 +411,7 @@ $$
 and consequently,
 
 $$
-\boxed{
-\theta_{\mathrm{max}}=45^\circ.
-}
+\boxed{\theta_{\mathrm{max}}=45^\circ}.
 $$
 
 Complementary launch angles satisfy
@@ -443,7 +420,7 @@ $$
 R(\theta)=R(90^\circ-\theta).
 $$
 
-Therefore, for example, \(30^\circ\) and \(60^\circ\) produce the same horizontal range in the ideal model.
+This symmetry explains why, for example, $30^\circ$ and $60^\circ$ produce the same horizontal range in the ideal model, even though they reach different maximum heights.
 
 ---
 
@@ -458,40 +435,28 @@ $$
 Using
 
 $$
-v_y(t)=v_0\sin\theta-gt,
+v_y(t)=v_0\sin(\theta)-gt,
 $$
 
 we obtain
 
 $$
-t_H=\frac{v_0\sin\theta}{g}.
+t_H=\frac{v_0\sin(\theta)}{g}.
 $$
 
-Substituting this time into \(y(t)\),
+Substituting this time into the vertical position,
 
 $$
-H_{\max}
-=
-v_0\sin\theta
-\left(
-\frac{v_0\sin\theta}{g}
-\right)
--
-\frac{1}{2}g
-\left(
-\frac{v_0\sin\theta}{g}
-\right)^2.
+H_{\max}=v_0\sin(\theta)\left(\frac{v_0\sin(\theta)}{g}\right)-\frac{g}{2}\left(\frac{v_0\sin(\theta)}{g}\right)^2.
 $$
 
 After simplification,
 
 $$
-\boxed{
-H_{\max}
-=
-\frac{v_0^2\sin^2\theta}{2g}.
-}
+\boxed{H_{\max}=\frac{v_0^2\sin^2(\theta)}{2g}}.
 $$
+
+Unlike the horizontal range, the maximum height increases monotonically with the launch angle and reaches its largest value for a vertical launch, $\theta=90^\circ$.
 
 ---
 
@@ -502,9 +467,7 @@ For the numerical solution, the second-order equations are rewritten as a first-
 Defining
 
 $$
-v_x=\frac{dx}{dt},
-\qquad
-v_y=\frac{dy}{dt},
+v_x=\frac{dx}{dt},\qquad v_y=\frac{dy}{dt},
 $$
 
 the system becomes
@@ -530,8 +493,7 @@ $$
 The corresponding state vector is
 
 $$
-\mathbf{u}(t)
-=
+\mathbf{u}(t)=
 \begin{pmatrix}
 x(t)\\
 y(t)\\
@@ -545,13 +507,12 @@ The numerical integration is performed using SciPy's `solve_ivp` function.
 The integration begins with
 
 $$
-\mathbf{u}(0)
-=
+\mathbf{u}(0)=
 \begin{pmatrix}
 0\\
 0\\
-v_0\cos\theta\\
-v_0\sin\theta
+v_0\cos(\theta)\\
+v_0\sin(\theta)
 \end{pmatrix},
 $$
 
@@ -562,6 +523,8 @@ y=0
 $$
 
 during the descending part of the motion.
+
+The numerical formulation is mathematically equivalent to the analytical model. Therefore, both approaches must produce the same trajectory within numerical precision.
 
 For the figures:
 
@@ -576,20 +539,20 @@ The agreement between both solutions provides a direct validation of the numeric
 
 | Program | Description |
 |:---|:---|
-| `analytical_solution.py` | Computes the trajectory using the exact analytical expression \(y(x)\). |
+| `analytical_solution.py` | Computes the trajectory using the exact analytical expression $y(x)$. |
 | `numerical_solution.py` | Integrates the governing differential equations numerically. |
-| `analytical_numerical_comparison.py` | Superposes the analytical and numerical trajectories. |
+| `analytical_numerical_comparison.py` | Compares the analytical and numerical trajectories in the same figures. |
 
-The comparison program will generate two figures:
+The comparison program generates two figures:
 
-1. variation of the launch angle \(\theta\) for fixed \(v_0\);
-2. variation of the initial speed \(v_0\) for fixed \(\theta\).
+1. variation of the launch angle $\theta$ for fixed $v_0$;
+2. variation of the initial speed $v_0$ for fixed $\theta$.
 
 ---
 
 ## 📈 6. Generated figures
 
-### Variation of the launch angle
+### Figure 1. Variation of the launch angle
 
 The launch angle is varied while the initial speed remains fixed.
 
@@ -607,7 +570,7 @@ High-resolution PDF:
 
 ---
 
-### Variation of the initial speed
+### Figure 2. Variation of the initial speed
 
 The initial speed is varied while the launch angle remains fixed.
 
@@ -647,10 +610,10 @@ python numerical_solution.py
 python analytical_numerical_comparison.py
 ```
 
-The programs will generate PNG figures for visualization in GitHub and PDF figures for use in the associated article.
+The programs generate PNG figures for visualization in GitHub and PDF figures for use in the associated article.
 
 ---
 
 ## 📚 8. References
 
-Classical mechanics and projectile-motion references will be added after the theoretical section of the associated article is finalized.
+Classical mechanics, projectile-motion, and numerical-method references will be incorporated after the theoretical section of the associated article is finalized.
