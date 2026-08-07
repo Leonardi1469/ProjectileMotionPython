@@ -563,15 +563,11 @@ The launch angle is varied while the initial speed remains fixed.
 
 Continuous curves correspond to the analytical solution, whereas discrete markers represent the numerical solution obtained from the integration of the governing differential equations.
 
-<!--
 ![Variation of the launch angle](ideal_angle_variation.png)
--->
 
 High-resolution PDF:
 
-<!--
 [Download PDF](ideal_angle_variation.pdf)
--->
 
 ---
 
