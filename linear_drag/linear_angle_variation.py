@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[2]:
-
-
 # ============================================================
 # Projectile Motion in Python
 # Linear-drag model: variation of the launch angle
@@ -186,9 +180,6 @@ plt.savefig(
 )
 
 plt.show()
-
-
-# In[ ]:
 
 
 
