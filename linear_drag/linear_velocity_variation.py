@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 # ============================================================
 # Projectile Motion in Python
 # Linear-drag model: variation of the initial speed
@@ -192,4 +186,3 @@ plt.savefig(
 )
 
 plt.show()
-
