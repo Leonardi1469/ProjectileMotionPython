@@ -885,10 +885,10 @@ $$
 y(t)
 = \frac{1}{\gamma}
 \left(
-v_0\sin(\theta)+\frac{g}{\gamma}
+v_0 \sin(\theta)+\frac{g}{\gamma}
 \right)
 \left(1-e^{-\gamma t}\right)
-- \frac{g}{\gamma}t
+-\frac{g}{\gamma}t
 $$
 
 are used to generate the continuous curves, whereas the governing differential equations are independently integrated using SciPy's `solve_ivp` function to generate the numerical markers.
