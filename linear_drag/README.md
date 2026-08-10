@@ -95,8 +95,7 @@ the equation of motion becomes
 
 $$
 m\frac{d^2\mathbf{r}}{dt^2}
-=
--mg\hat{\mathbf{y}}
+= -mg\hat{\mathbf{y}}
 -b\frac{d\mathbf{r}}{dt}.
 $$
 
@@ -111,8 +110,7 @@ we obtain
 $$
 \boxed{
 \frac{d^2\mathbf{r}}{dt^2}
-=
--g\hat{\mathbf{y}}
+= -g\hat{\mathbf{y}}
 -\gamma\frac{d\mathbf{r}}{dt}
 }.
 $$
@@ -122,8 +120,7 @@ The horizontal and vertical equations are therefore
 $$
 \boxed{
 \frac{d^2x}{dt^2}
-=
--\gamma\frac{dx}{dt}
+= -\gamma\frac{dx}{dt}
 }
 $$
 
@@ -132,8 +129,7 @@ and
 $$
 \boxed{
 \frac{d^2y}{dt^2}
-=
--g-\gamma\frac{dy}{dt}
+= -g-\gamma\frac{dy}{dt}
 }.
 $$
 
@@ -149,8 +145,7 @@ The horizontal equation is
 
 $$
 \frac{d^2x}{dt^2}
-=
--\gamma\frac{dx}{dt}.
+= -\gamma\frac{dx}{dt}.
 $$
 
 Using
@@ -215,8 +210,7 @@ we integrate from the initial position to the position at time $t$:
 
 $$
 \int_0^{x(t)}dx
-=
-v_0\cos(\theta)
+= v_0\cos(\theta)
 \int_0^t e^{-\gamma t'}dt'.
 $$
 
@@ -224,8 +218,7 @@ The integral is
 
 $$
 \int_0^t e^{-\gamma t'}dt'
-=
-\frac{1-e^{-\gamma t}}{\gamma}.
+= \frac{1-e^{-\gamma t}}{\gamma}.
 $$
 
 Therefore,
@@ -280,10 +273,8 @@ Multiplying the differential equation by the integrating factor gives
 
 $$
 e^{\gamma t}\frac{dv_y}{dt}
-+
-\gamma e^{\gamma t}v_y
-=
--ge^{\gamma t}.
++ \gamma e^{\gamma t}v_y
+= -ge^{\gamma t}.
 $$
 
 The left-hand side can be written as
@@ -293,16 +284,14 @@ $$
 \left(
 e^{\gamma t}v_y
 \right)
-=
--ge^{\gamma t}.
+= -ge^{\gamma t}.
 $$
 
 Integrating,
 
 $$
 e^{\gamma t}v_y
-=
--\frac{g}{\gamma}e^{\gamma t}
+= -\frac{g}{\gamma}e^{\gamma t}
 +C_3.
 $$
 
@@ -310,8 +299,7 @@ Therefore,
 
 $$
 v_y(t)
-=
--\frac{g}{\gamma}
+= -\frac{g}{\gamma}
 +
 C_3e^{-\gamma t}.
 $$
@@ -326,8 +314,7 @@ we obtain
 
 $$
 v_0\sin(\theta)
-=
--\frac{g}{\gamma}+C_3.
+= -\frac{g}{\gamma}+C_3.
 $$
 
 Thus,
@@ -342,8 +329,7 @@ The vertical velocity is therefore
 $$
 \boxed{
 v_y(t)
-=
-\left(
+= \left(
 v_0\sin(\theta)+\frac{g}{\gamma}
 \right)e^{-\gamma t}
 -\frac{g}{\gamma}
@@ -356,8 +342,7 @@ Since
 
 $$
 \frac{dy}{dt}
-=
-\left(
+= \left(
 v_0\sin(\theta)+\frac{g}{\gamma}
 \right)e^{-\gamma t}
 -\frac{g}{\gamma},
@@ -367,28 +352,24 @@ integrating from $0$ to $t$ gives
 
 $$
 y(t)
-=
-\left(
+= \left(
 v_0\sin(\theta)+\frac{g}{\gamma}
 \right)
 \int_0^t e^{-\gamma t'}dt'
--
-\frac{g}{\gamma}\int_0^t dt'.
+- \frac{g}{\gamma}\int_0^t dt'.
 $$
 
 Therefore,
 
 $$
 \boxed{
-y(t)
-=
+y(t) =
 \frac{1}{\gamma}
 \left(
 v_0\sin(\theta)+\frac{g}{\gamma}
 \right)
 \left(1-e^{-\gamma t}\right)
--
-\frac{g}{\gamma}t
+- \frac{g}{\gamma}t
 }.
 $$
 
@@ -411,14 +392,12 @@ and
 $$
 \boxed{
 y(t)
-=
-\frac{1}{\gamma}
+= \frac{1}{\gamma}
 \left(
 v_0\sin(\theta)+\frac{g}{\gamma}
 \right)
 \left(1-e^{-\gamma t}\right)
--
-\frac{g}{\gamma}t
+- \frac{g}{\gamma}t
 }.
 $$
 
@@ -444,16 +423,14 @@ we obtain
 
 $$
 \frac{\gamma x}{v_0\cos(\theta)}
-=
-1-e^{-\gamma t}.
+= 1-e^{-\gamma t}.
 $$
 
 Therefore,
 
 $$
 e^{-\gamma t}
-=
-1-
+= 1-
 \frac{\gamma x}{v_0\cos(\theta)}.
 $$
 
@@ -461,8 +438,7 @@ Taking the natural logarithm,
 
 $$
 -\gamma t
-=
-\ln
+= \ln
 \left(
 1-
 \frac{\gamma x}{v_0\cos(\theta)}
@@ -485,21 +461,18 @@ Substituting this expression into $y(t)$ and using
 
 $$
 1-e^{-\gamma t}
-=
-\frac{\gamma x}{v_0\cos(\theta)},
+= \frac{\gamma x}{v_0\cos(\theta)},
 $$
 
 we obtain
 
 $$
 y(x)
-=
-\left(
+= \left(
 v_0\sin(\theta)+\frac{g}{\gamma}
 \right)
 \frac{x}{v_0\cos(\theta)}
-+
-\frac{g}{\gamma^2}
++ \frac{g}{\gamma^2}
 \ln
 \left(
 1-
@@ -512,12 +485,9 @@ Therefore,
 $$
 \boxed{
 y(x)
-=
-x\tan(\theta)
-+
-\frac{gx}{\gamma v_0\cos(\theta)}
-+
-\frac{g}{\gamma^2}
+= x\tan(\theta)
++ \frac{gx}{\gamma v_0\cos(\theta)}
++ \frac{g}{\gamma^2}
 \ln
 \left(
 1-
@@ -544,8 +514,7 @@ Using
 
 $$
 v_y(t)
-=
-\left(
+= \left(
 v_0\sin(\theta)+\frac{g}{\gamma}
 \right)e^{-\gamma t}
 -\frac{g}{\gamma},
@@ -557,16 +526,14 @@ $$
 \left(
 v_0\sin(\theta)+\frac{g}{\gamma}
 \right)e^{-\gamma t_H}
-=
-\frac{g}{\gamma}.
+= \frac{g}{\gamma}.
 $$
 
 Therefore,
 
 $$
 e^{-\gamma t_H}
-=
-\frac{g}{g+\gamma v_0\sin(\theta)}.
+= \frac{g}{g+\gamma v_0\sin(\theta)}.
 $$
 
 Taking the natural logarithm gives
@@ -607,10 +574,8 @@ $$
 v_0\sin(\theta)+\frac{g}{\gamma}
 \right)
 \left(1-e^{-\gamma T}\right)
--
-\frac{g}{\gamma}T
-=
-0.
+- \frac{g}{\gamma}T
+= 0.
 $$
 
 Multiplying by $\gamma$ gives
@@ -621,8 +586,7 @@ v_0\sin(\theta)+\frac{g}{\gamma}
 \right)
 \left(1-e^{-\gamma T}\right)
 -gT
-=
-0.
+= 0.
 $$
 
 Unlike the ideal projectile model, this equation contains the flight time both linearly and inside an exponential function.
@@ -635,10 +599,7 @@ $$
 v_0\sin(\theta)+\frac{g}{\gamma}
 \right)
 \left(1-e^{-\gamma T}\right)
--gT
-=
-0
-}.
+-gT = 0 }.
 $$
 
 In the Python implementation, the nonzero root is obtained numerically using a root-finding method.
@@ -687,8 +648,7 @@ For small $\gamma$, the exponential can be expanded as
 
 $$
 e^{-\gamma t}
-=
-1-\gamma t+\frac{\gamma^2t^2}{2}
+= 1-\gamma t+\frac{\gamma^2t^2}{2}
 -\frac{\gamma^3t^3}{6}
 +\cdots.
 $$
@@ -697,8 +657,7 @@ Therefore,
 
 $$
 1-e^{-\gamma t}
-=
-\gamma t-\frac{\gamma^2t^2}{2}
+= \gamma t-\frac{\gamma^2t^2}{2}
 +\frac{\gamma^3t^3}{6}
 +\cdots.
 $$
@@ -717,8 +676,7 @@ we substitute the expansion:
 
 $$
 x(t)
-=
-\frac{v_0\cos(\theta)}{\gamma}
+= \frac{v_0\cos(\theta)}{\gamma}
 \left(
 \gamma t-\frac{\gamma^2t^2}{2}
 +\cdots
@@ -729,8 +687,7 @@ Simplifying,
 
 $$
 x(t)
-=
-v_0\cos(\theta)
+= v_0\cos(\theta)
 \left(
 t-\frac{\gamma t^2}{2}
 +\cdots
@@ -742,8 +699,7 @@ Thus,
 $$
 \boxed{
 \lim_{\gamma\rightarrow0}x(t)
-=
-v_0\cos(\theta)t
+= v_0\cos(\theta)t
 }.
 $$
 
@@ -755,22 +711,19 @@ For the vertical coordinate,
 
 $$
 y(t)
-=
-\frac{1}{\gamma}
+= \frac{1}{\gamma}
 \left(
 v_0\sin(\theta)+\frac{g}{\gamma}
 \right)
 \left(1-e^{-\gamma t}\right)
--
-\frac{g}{\gamma}t.
+- \frac{g}{\gamma}t.
 $$
 
 Using the expansion,
 
 $$
 1-e^{-\gamma t}
-=
-\gamma t-\frac{\gamma^2t^2}{2}
+= \gamma t-\frac{\gamma^2t^2}{2}
 +\frac{\gamma^3t^3}{6}
 +\cdots,
 $$
@@ -779,8 +732,7 @@ we obtain
 
 $$
 y(t)
-=
-\left(
+= \left(
 v_0\sin(\theta)+\frac{g}{\gamma}
 \right)
 \left(
@@ -788,16 +740,14 @@ t-\frac{\gamma t^2}{2}
 +\frac{\gamma^2t^3}{6}
 +\cdots
 \right)
--
-\frac{g}{\gamma}t.
+- \frac{g}{\gamma}t.
 $$
 
 Expanding the terms gives
 
 $$
 y(t)
-=
-v_0\sin(\theta)t
+=v_0\sin(\theta)t
 -\frac{\gamma v_0\sin(\theta)t^2}{2}
 +\frac{g}{\gamma}t
 -\frac{gt^2}{2}
@@ -816,8 +766,7 @@ Therefore, in the limit $\gamma\rightarrow0$,
 $$
 \boxed{
 \lim_{\gamma\rightarrow0}y(t)
-=
-v_0\sin(\theta)t-\frac{1}{2}gt^2
+= v_0\sin(\theta)t-\frac{1}{2}gt^2
 }.
 $$
 
@@ -934,14 +883,12 @@ and
 
 $$
 y(t)
-=
-\frac{1}{\gamma}
+= \frac{1}{\gamma}
 \left(
 v_0\sin(\theta)+\frac{g}{\gamma}
 \right)
 \left(1-e^{-\gamma t}\right)
--
-\frac{g}{\gamma}t
+- \frac{g}{\gamma}t
 $$
 
 are used to generate the continuous curves, whereas the governing differential equations are independently integrated using SciPy's `solve_ivp` function to generate the numerical markers.
