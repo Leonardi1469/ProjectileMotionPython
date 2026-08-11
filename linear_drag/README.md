@@ -351,11 +351,11 @@ integrating from $0$ to $t$ gives
 
 $$
 y(t)
-= \left(
+=\left(
 v_0\sin(\theta)+\frac{g}{\gamma}
 \right)
 \int_0^t e^{-\gamma t'}dt'
-- \frac{g}{\gamma}\int_0^t dt'.
+-\frac{g}{\gamma}\int_0^t dt'.
 $$
 
 Therefore,
@@ -368,7 +368,7 @@ y(t) =
 v_0\sin(\theta)+\frac{g}{\gamma}
 \right)
 \left(1-e^{-\gamma t}\right)
-- \frac{g}{\gamma}t
+-\frac{g}{\gamma}t
 }.
 $$
 
@@ -382,8 +382,7 @@ $$
 \boxed{
 x(t)=
 \frac{v_0\cos(\theta)}{\gamma}
-\left(1-e^{-\gamma t}\right)
-}
+\left(1-e^{-\gamma t}\right)}
 $$
 
 and
@@ -396,8 +395,7 @@ y(t)
 v_0\sin(\theta)+\frac{g}{\gamma}
 \right)
 \left(1-e^{-\gamma t}\right)
-- \frac{g}{\gamma}t
-}.
+- \frac{g}{\gamma}t}.
 $$
 
 These equations provide an exact parametric description of the projectile trajectory in the presence of linear air resistance.
