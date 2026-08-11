@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[3]:
-
-
 # ============================================================
 # Projectile Motion in Python
 # Ideal model: horizontal range R(v0, theta)
@@ -148,4 +142,3 @@ plt.savefig(
 )
 
 plt.show()
-
