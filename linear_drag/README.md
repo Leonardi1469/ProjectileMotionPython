@@ -390,12 +390,12 @@ and
 $$
 \boxed{
 y(t)
-= \frac{1}{\gamma}
+=\frac{1}{\gamma}
 \left(
 v_0\sin(\theta)+\frac{g}{\gamma}
 \right)
 \left(1-e^{-\gamma t}\right)
-- \frac{g}{\gamma}t}.
+-\frac{g}{\gamma}t}.
 $$
 
 These equations provide an exact parametric description of the projectile trajectory in the presence of linear air resistance.
