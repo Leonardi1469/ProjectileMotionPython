@@ -420,14 +420,14 @@ we obtain
 
 $$
 \frac{\gamma x}{v_0\cos(\theta)}
-= 1-e^{-\gamma t}.
+=1-e^{-\gamma t}.
 $$
 
 Therefore,
 
 $$
 e^{-\gamma t}
-= 1-
+=1-
 \frac{\gamma x}{v_0\cos(\theta)}.
 $$
 
@@ -435,7 +435,7 @@ Taking the natural logarithm,
 
 $$
 -\gamma t
-= \ln
+=\ln
 \left(
 1-
 \frac{\gamma x}{v_0\cos(\theta)}
@@ -571,7 +571,7 @@ $$
 v_0\sin(\theta)+\frac{g}{\gamma}
 \right)
 \left(1-e^{-\gamma T}\right)
-- \frac{g}{\gamma}T
+-\frac{g}{\gamma}T
 = 0.
 $$
 
@@ -713,7 +713,7 @@ y(t)
 v_0\sin(\theta)+\frac{g}{\gamma}
 \right)
 \left(1-e^{-\gamma t}\right)
-- \frac{g}{\gamma}t.
+-\frac{g}{\gamma}t.
 $$
 
 Using the expansion,
