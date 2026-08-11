@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[4]:
-
-
 # ============================================================
 # Projectile Motion in Python
 # Ideal projectile model: variation of the initial speed
@@ -172,4 +166,3 @@ plt.savefig(
 )
 
 plt.show()
-
