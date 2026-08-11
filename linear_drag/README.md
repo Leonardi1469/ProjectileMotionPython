@@ -666,7 +666,7 @@ $$
 \boxed{R=\frac{v_0\cos(\theta)}{\gamma}\left(1-e^{-\gamma T}\right)}.
 $$
 
-Using the exact Lambert-$W$ expression for $T$, the range can also be regarded as an exact analytical quantity.
+Using the exact Lambert $W$ expression for $T$, the range can also be regarded as an exact analytical quantity.
 
 However, unlike the ideal expression
 
