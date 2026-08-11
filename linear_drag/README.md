@@ -469,7 +469,7 @@ y(x)
 v_0\sin(\theta)+\frac{g}{\gamma}
 \right)
 \frac{x}{v_0\cos(\theta)}
-+ \frac{g}{\gamma^2}
++\frac{g}{\gamma^2}
 \ln
 \left(
 1-
@@ -483,8 +483,8 @@ $$
 \boxed{
 y(x)
 = x\tan(\theta)
-+ \frac{gx}{\gamma v_0\cos(\theta)}
-+ \frac{g}{\gamma^2}
++\frac{gx}{\gamma v_0\cos(\theta)}
++\frac{g}{\gamma^2}
 \ln
 \left(
 1-
@@ -737,7 +737,7 @@ t-\frac{\gamma t^2}{2}
 +\frac{\gamma^2t^3}{6}
 +\cdots
 \right)
-- \frac{g}{\gamma}t.
+-\frac{g}{\gamma}t.
 $$
 
 Expanding the terms gives
