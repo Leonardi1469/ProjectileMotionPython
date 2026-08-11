@@ -239,8 +239,7 @@ The vertical equation is
 
 $$
 \frac{d^2y}{dt^2}
-=
--g-\gamma\frac{dy}{dt}.
+= -g-\gamma\frac{dy}{dt}.
 $$
 
 Using
@@ -273,8 +272,8 @@ Multiplying the differential equation by the integrating factor gives
 
 $$
 e^{\gamma t}\frac{dv_y}{dt}
-+ \gamma e^{\gamma t}v_y
-= -ge^{\gamma t}.
++\gamma e^{\gamma t}v_y
+= - ge^{\gamma t}.
 $$
 
 The left-hand side can be written as
