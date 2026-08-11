@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[2]:
-
-
 # ============================================================
 # Projectile Motion in Python
 # Linear-drag model: horizontal range R(theta, gamma)
@@ -208,10 +202,3 @@ plt.savefig(
 )
 
 plt.show()
-
-
-# In[ ]:
-
-
-
-
