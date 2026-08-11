@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[8]:
-
-
 # ============================================================
 # Projectile Motion in Python
 # Linear-drag model: variation of the drag parameter gamma
@@ -205,10 +199,3 @@ plt.savefig(
 )
 
 plt.show()
-
-
-# In[ ]:
-
-
-
-
