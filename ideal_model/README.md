@@ -727,7 +727,7 @@ while the initial speed is varied.
 The values considered are
 
 $$
-v_0=10, 15, 20, 25, 30\ \mathrm{m/s}.
+v_0=10, 15, 20, 25, 30 \mathrm{m/s}.
 $$
 
 Continuous curves represent the analytical solution and circular markers represent the numerical integration.
