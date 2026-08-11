@@ -673,7 +673,7 @@ while the launch angle is varied.
 The values considered are
 
 $$
-\theta=15^\circ, 30^\circ, 45^\circ, 60^\circ, 75^\circ.
+\theta=15^\circ,\ 30^\circ,\ 45^\circ,\ 60^\circ,\ 75^\circ.
 $$
 
 Continuous curves represent the exact analytical trajectory, whereas circular markers correspond to the numerical integration.
@@ -727,7 +727,7 @@ while the initial speed is varied.
 The values considered are
 
 $$
-v_0=10,\ 15, 20, 25, 30\ \mathrm{m/s}.
+v_0=10,\ 15,\ 20,\ 25,\ 30\ \mathrm{m/s}.
 $$
 
 Continuous curves represent the analytical solution and circular markers represent the numerical integration.
