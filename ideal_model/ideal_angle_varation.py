@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 # ============================================================
 # Projectile Motion in Python
 # Ideal projectile model: variation of the launch angle
@@ -172,4 +166,3 @@ plt.savefig(
 )
 
 plt.show()
-
