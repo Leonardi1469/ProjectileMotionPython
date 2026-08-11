@@ -2,9 +2,11 @@
 
 ## Ideal Projectile Model
 
-The ideal projectile model describes the motion of a particle subjected only to a constant gravitational force. Air resistance, wind, rotation, and any other aerodynamic effects are neglected.
+The ideal projectile model describes the motion of a particle subjected only to a constant gravitational force. Air resistance, wind, rotation, and other aerodynamic effects are neglected.
 
-Although this is one of the simplest models in classical mechanics, it provides a useful starting point for connecting analytical solutions, numerical integration, and Python visualizations.
+Although this is the simplest of the three models considered in this repository, it provides the fundamental reference against which the effects of linear and quadratic air resistance will later be compared. It also offers an ideal setting for connecting analytical mechanics, numerical integration, and computational visualization.
+
+Because an exact analytical solution is available, the ideal model allows the numerical implementation to be validated directly before applying the same computational methodology to progressively more complex situations.
 
 ---
 
@@ -18,6 +20,7 @@ The following assumptions are considered:
 - gravitational acceleration is constant;
 - the motion takes place close to Earth's surface;
 - air resistance is neglected;
+- wind and other aerodynamic effects are neglected;
 - the initial position is
 
 $$
@@ -30,7 +33,15 @@ $$
 v_x(0)=v_0\cos(\theta),\qquad v_y(0)=v_0\sin(\theta).
 $$
 
-Under these assumptions, the only force acting on the projectile is its weight.
+Under these assumptions, the only force acting on the projectile after launch is its weight,
+
+$$
+\mathbf{F}=-mg\hat{\mathbf{y}}.
+$$
+
+The absence of a horizontal force implies that the horizontal velocity remains constant, whereas gravity continuously modifies the vertical component of the velocity.
+
+This separation between horizontal and vertical motion is one of the characteristic features of the ideal projectile model.
 
 ---
 
@@ -42,33 +53,31 @@ $$
 m\frac{d^2\mathbf{r}}{dt^2}=\mathbf{F},
 $$
 
-where
+where the position vector is
 
 $$
 \mathbf{r}(t)=x(t)\hat{\mathbf{x}}+y(t)\hat{\mathbf{y}}.
 $$
 
-For the ideal model, the only force acting on the projectile is gravity:
+For the ideal projectile,
 
 $$
 \mathbf{F}=-mg\hat{\mathbf{y}}.
 $$
 
-Since gravity acts only in the vertical direction, the horizontal and vertical motions can be analyzed independently.
-
-The horizontal equation is
+Therefore,
 
 $$
 m\frac{d^2x}{dt^2}=0,
 $$
 
-whereas the vertical equation is
+and
 
 $$
 m\frac{d^2y}{dt^2}=-mg.
 $$
 
-After dividing by the mass, the governing equations become
+Dividing by the mass gives the governing differential equations
 
 $$
 \boxed{\frac{d^2x}{dt^2}=0}
@@ -80,7 +89,7 @@ $$
 \boxed{\frac{d^2y}{dt^2}=-g}.
 $$
 
-The horizontal acceleration is zero, whereas the vertical acceleration is constant and directed downward.
+The first equation describes uniform horizontal motion, whereas the second describes uniformly accelerated vertical motion.
 
 ---
 
@@ -130,7 +139,7 @@ $$
 \boxed{v_x(t)=v_0\cos(\theta)}.
 $$
 
-Thus, the horizontal velocity remains constant throughout the motion.
+The horizontal velocity is consequently constant throughout the complete motion.
 
 Since
 
@@ -138,13 +147,13 @@ $$
 \frac{dx}{dt}=v_0\cos(\theta),
 $$
 
-a second integration gives
+integration gives
 
 $$
 x(t)=v_0\cos(\theta)t+C_2.
 $$
 
-Using
+Using the initial condition
 
 $$
 x(0)=0,
@@ -156,11 +165,13 @@ $$
 C_2=0.
 $$
 
-Thus, the horizontal position is
+Thus,
 
 $$
 \boxed{x(t)=v_0\cos(\theta)t}.
 $$
+
+The horizontal position therefore increases linearly with time.
 
 ---
 
@@ -184,7 +195,7 @@ $$
 \frac{dv_y}{dt}=-g.
 $$
 
-Integrating with respect to time gives
+Integrating gives
 
 $$
 v_y(t)=-gt+C_3.
@@ -208,7 +219,19 @@ $$
 \boxed{v_y(t)=v_0\sin(\theta)-gt}.
 $$
 
-Unlike the horizontal component, the vertical velocity changes linearly with time due to gravity.
+The vertical velocity decreases linearly with time because gravity acts continuously in the downward direction.
+
+During the ascending part of the motion, $v_y>0$. At the maximum height,
+
+$$
+v_y=0,
+$$
+
+and during the descending part,
+
+$$
+v_y<0.
+$$
 
 Since
 
@@ -234,7 +257,7 @@ $$
 C_4=0.
 $$
 
-Thus, the vertical position is
+Thus,
 
 $$
 \boxed{y(t)=v_0\sin(\theta)t-\frac{1}{2}gt^2}.
@@ -244,7 +267,7 @@ $$
 
 ### Parametric solution
 
-The complete analytical solution is therefore
+The complete analytical solution of the ideal projectile is therefore
 
 $$
 \boxed{x(t)=v_0\cos(\theta)t}
@@ -256,27 +279,27 @@ $$
 \boxed{y(t)=v_0\sin(\theta)t-\frac{1}{2}gt^2}.
 $$
 
-Together, these equations completely describe the projectile motion as a function of time.
+Together, these equations provide a complete parametric description of the trajectory, with time $t$ acting as the parameter.
 
 ---
 
 ### Cartesian trajectory $y(x)$
 
-To obtain the projectile trajectory directly as a function of the horizontal position, the time parameter is eliminated from the parametric equations.
+To obtain the trajectory directly as a function of the horizontal coordinate, the time parameter can be eliminated.
 
-From the horizontal motion,
+From
 
 $$
 x(t)=v_0\cos(\theta)t,
 $$
 
-the time can be written as
+we obtain
 
 $$
 t=\frac{x}{v_0\cos(\theta)}.
 $$
 
-Substituting this expression into the vertical equation,
+Substituting this expression into
 
 $$
 y(t)=v_0\sin(\theta)t-\frac{1}{2}gt^2,
@@ -288,7 +311,7 @@ $$
 y(x)=v_0\sin(\theta)\left(\frac{x}{v_0\cos(\theta)}\right)-\frac{g}{2}\left(\frac{x}{v_0\cos(\theta)}\right)^2.
 $$
 
-The first term simplifies as
+The first term becomes
 
 $$
 v_0\sin(\theta)\left(\frac{x}{v_0\cos(\theta)}\right)=x\tan(\theta),
@@ -300,7 +323,7 @@ $$
 \frac{g}{2}\left(\frac{x}{v_0\cos(\theta)}\right)^2=\frac{g}{2v_0^2\cos^2(\theta)}x^2.
 $$
 
-Therefore, the Cartesian equation of the trajectory is
+Therefore,
 
 $$
 \boxed{y(x)=x\tan(\theta)-\frac{g}{2v_0^2\cos^2(\theta)}x^2}.
@@ -328,99 +351,49 @@ $$
 C=0.
 $$
 
-Since the highest power of the independent variable is two, the trajectory is a parabola. The coefficients of the parabola depend on the initial speed and the launch angle.
+Because the highest power of $x$ is two, the ideal projectile trajectory is exactly a parabola.
 
-This analytical expression is used to generate the continuous curves shown in the figures of the ideal projectile model and to compare them directly with the numerical solutions obtained from the governing differential equations.
+The coefficients depend on $v_0$ and $\theta$, so modifying either parameter changes the shape, horizontal extension, and maximum height of the trajectory while preserving its parabolic character.
+
+This analytical expression is used to generate the continuous curves shown in the trajectory figures.
 
 ---
 
 ### Flight time
 
-The projectile returns to the ground when
+The total flight time is obtained from the condition that the projectile returns to ground level,
 
 $$
 y(T)=0.
 $$
 
-Using the vertical position,
+Using the analytical vertical position,
 
 $$
-y(T)=v_0\sin(\theta)T-\frac{1}{2}gT^2,
+v_0\sin(\theta)T-\frac{1}{2}gT^2=0.
 $$
 
-we obtain
+Factoring $T$ gives
 
 $$
 T\left(v_0\sin(\theta)-\frac{gT}{2}\right)=0.
 $$
 
-The solution
+The first solution,
 
 $$
-T=0
+T=0,
 $$
 
 corresponds to the launch instant.
 
-The nonzero solution is
+The nonzero solution gives the total flight time:
 
 $$
 \boxed{T=\frac{2v_0\sin(\theta)}{g}}.
 $$
 
----
-
-### Horizontal range
-
-The horizontal range is obtained by evaluating $x(t)$ at the total flight time:
-
-$$
-R=x(T).
-$$
-
-Therefore,
-
-$$
-R=v_0\cos(\theta)\left(\frac{2v_0\sin(\theta)}{g}\right).
-$$
-
-Using the identity
-
-$$
-2\sin(\theta)\cos(\theta)=\sin(2\theta),
-$$
-
-we obtain
-
-$$
-\boxed{R=\frac{v_0^2}{g}\sin(2\theta)}.
-$$
-
-For a fixed initial speed, the maximum horizontal range occurs when
-
-$$
-\sin(2\theta)=1.
-$$
-
-Thus,
-
-$$
-2\theta=90^\circ,
-$$
-
-and consequently,
-
-$$
-\boxed{\theta_{\mathrm{max}}=45^\circ}.
-$$
-
-Complementary launch angles satisfy
-
-$$
-R(\theta)=R(90^\circ-\theta).
-$$
-
-This symmetry explains why, for example, $30^\circ$ and $60^\circ$ produce the same horizontal range in the ideal model, even though they reach different maximum heights.
+For fixed $v_0$, increasing the launch angle increases the vertical component of the initial velocity and consequently increases the flight time.
 
 ---
 
@@ -444,7 +417,7 @@ $$
 t_H=\frac{v_0\sin(\theta)}{g}.
 $$
 
-Substituting this time into the vertical position,
+Substituting this time into $y(t)$ gives
 
 $$
 H_{\max}=v_0\sin(\theta)\left(\frac{v_0\sin(\theta)}{g}\right)-\frac{g}{2}\left(\frac{v_0\sin(\theta)}{g}\right)^2.
@@ -456,13 +429,133 @@ $$
 \boxed{H_{\max}=\frac{v_0^2\sin^2(\theta)}{2g}}.
 $$
 
-Unlike the horizontal range, the maximum height increases monotonically with the launch angle and reaches its largest value for a vertical launch, $\theta=90^\circ$.
+For fixed $v_0$, the maximum height increases monotonically with $\theta$. Its largest possible value occurs for a vertical launch,
+
+$$
+\theta=90^\circ,
+$$
+
+for which the horizontal range is zero.
+
+This illustrates an important distinction between maximum height and maximum horizontal range: maximizing one does not maximize the other.
+
+---
+
+### Horizontal range
+
+The horizontal range is obtained by evaluating $x(t)$ at the total flight time:
+
+$$
+R=x(T).
+$$
+
+Using
+
+$$
+x(t)=v_0\cos(\theta)t
+$$
+
+and
+
+$$
+T=\frac{2v_0\sin(\theta)}{g},
+$$
+
+we obtain
+
+$$
+R=v_0\cos(\theta)\left(\frac{2v_0\sin(\theta)}{g}\right).
+$$
+
+Therefore,
+
+$$
+R=\frac{2v_0^2\sin(\theta)\cos(\theta)}{g}.
+$$
+
+Using the identity
+
+$$
+2\sin(\theta)\cos(\theta)=\sin(2\theta),
+$$
+
+the horizontal range becomes
+
+$$
+\boxed{R=\frac{v_0^2}{g}\sin(2\theta)}.
+$$
+
+This equation contains two important dependencies.
+
+For fixed $\theta$,
+
+$$
+\boxed{R\propto v_0^2}.
+$$
+
+Thus, increasing the initial speed produces a quadratic increase in the horizontal range.
+
+For fixed $v_0$, the angular dependence is determined by
+
+$$
+R(\theta)\propto\sin(2\theta).
+$$
+
+The maximum range occurs when
+
+$$
+\sin(2\theta)=1.
+$$
+
+Therefore,
+
+$$
+2\theta=90^\circ,
+$$
+
+and hence
+
+$$
+\boxed{\theta_{\mathrm{opt}}=45^\circ}.
+$$
+
+The optimal launch angle is therefore independent of the initial speed in the ideal model.
+
+Another important consequence follows from
+
+$$
+\sin(2\theta)=\sin(180^\circ-2\theta).
+$$
+
+Therefore,
+
+$$
+\boxed{R(\theta)=R(90^\circ-\theta)}.
+$$
+
+Complementary launch angles produce the same horizontal range.
+
+For example,
+
+$$
+R(30^\circ)=R(60^\circ),
+$$
+
+and
+
+$$
+R(15^\circ)=R(75^\circ).
+$$
+
+However, the corresponding trajectories do not reach the same maximum height or have the same flight time.
+
+This symmetry is a particular property of the ideal model and will be modified when air resistance is introduced.
 
 ---
 
 ## 💻 4. Numerical implementation
 
-For the numerical solution, the second-order equations are rewritten as a first-order system.
+For numerical integration, the two second-order equations are rewritten as four first-order differential equations.
 
 Defining
 
@@ -490,7 +583,7 @@ $$
 \frac{dv_y}{dt}=-g.
 $$
 
-The corresponding state vector is
+The state vector is
 
 $$
 \mathbf{u}(t)=
@@ -502,9 +595,7 @@ v_y(t)
 \end{pmatrix}.
 $$
 
-The numerical integration is performed using SciPy's `solve_ivp` function.
-
-The integration begins with
+The initial condition is
 
 $$
 \mathbf{u}(0)=
@@ -513,57 +604,109 @@ $$
 0\\
 v_0\cos(\theta)\\
 v_0\sin(\theta)
-\end{pmatrix},
+\end{pmatrix}.
 $$
 
-and stops when the projectile returns to
+The equations are integrated using SciPy's `solve_ivp` routine.
+
+A ground-impact event stops the integration when the projectile crosses
 
 $$
 y=0
 $$
 
-during the descending part of the motion.
+during its descending motion.
 
-The numerical formulation is mathematically equivalent to the analytical model. Therefore, both approaches must produce the same trajectory within numerical precision.
+Because the exact analytical solution is known, the numerical result can be directly compared with it.
 
-For the figures:
+In the trajectory figures:
 
-- continuous lines represent the analytical solution;
-- discrete markers represent the numerical solution.
+- continuous curves represent the analytical solution;
+- circular markers represent the numerical integration.
 
-The agreement between both solutions provides a direct validation of the numerical implementation.
+The superposition of both results provides a direct verification that the numerical implementation correctly reproduces the ideal projectile dynamics.
+
+This validation is particularly useful before applying the same numerical strategy to the models with air resistance.
 
 ---
 
-## 🐍 5. Python code
+## 🐍 5. Python codes
 
-The Python implementation computes both the analytical and numerical solutions of the ideal projectile model. The analytical trajectory is obtained directly from the Cartesian equation,
-
-$$
-y(x)=x\tan(\theta)-\frac{g}{2v_0^2\cos^2(\theta)}x^2,
-$$
-
-whereas the numerical solution is obtained by integrating the governing differential equations using SciPy's `solve_ivp` function.
-
-Both solutions are superposed in the same figures, allowing a direct comparison between the exact analytical results (continuous lines) and the numerical integration (discrete markers).
+Three Python programs are included for the ideal projectile model.
 
 | Program | Description |
 |:---|:---|
-| `ideal_projectile.py` | Computes the analytical and numerical solutions of the ideal projectile model and generates all figures associated with this section. |
+| `ideal_angle_variation.py` | Compares the analytical and numerical trajectories for different launch angles. |
+| `ideal_velocity_variation.py` | Compares the analytical and numerical trajectories for different initial speeds. |
+| `ideal_range_map.py` | Evaluates the analytical horizontal range $R(v_0,\theta)$ over a two-dimensional parameter space and identifies the optimal launch angle. |
+
+The first two programs compare the exact trajectory with the numerical integration.
+
+The third program uses the analytical expression
+
+$$
+R(v_0,\theta)=\frac{v_0^2}{g}\sin(2\theta)
+$$
+
+to explore simultaneously the dependence of the horizontal range on the launch angle and the initial speed.
 
 ---
 
 ## 📈 6. Generated figures
 
-The Python program generates the figures presented below, comparing the analytical solution (continuous curves) with the numerical integration (circular markers). The excellent agreement between both approaches validates the numerical implementation of the ideal projectile model.
+The figures below illustrate different physical aspects of the ideal projectile model.
+
+The trajectory figures provide a direct comparison between analytical and numerical solutions, whereas the range map provides a broader parametric view of the dependence of the horizontal range on the initial conditions.
+
+---
 
 ### Figure 1. Variation of the launch angle
 
-The launch angle is varied while the initial speed remains fixed.
+The initial speed is kept fixed at
 
-The figure shows the projectile trajectories for different launch angles. Continuous curves correspond to the analytical solution, whereas circular markers represent the numerical integration of the governing differential equations. The comparison demonstrates the excellent agreement between both approaches over the entire trajectory.
+$$
+v_0=20\ \mathrm{m/s},
+$$
+
+while the launch angle is varied.
+
+The values considered are
+
+$$
+\theta=15^\circ,\;30^\circ,\;45^\circ,\;60^\circ,\;75^\circ.
+$$
+
+Continuous curves represent the exact analytical trajectory, whereas circular markers correspond to the numerical integration.
 
 ![Variation of the launch angle](ideal_angle_variation.png)
+
+The numerical markers overlap the analytical curves over the complete motion, validating the numerical implementation.
+
+The figure also illustrates several characteristic properties of the ideal model.
+
+The trajectory corresponding to
+
+$$
+\theta=45^\circ
+$$
+
+produces the largest horizontal range among the angles shown.
+
+Complementary angles terminate at the same horizontal position:
+
+$$
+R(15^\circ)=R(75^\circ),
+$$
+
+and
+
+$$
+R(30^\circ)=R(60^\circ).
+$$
+
+However, complementary trajectories reach different maximum heights and remain in flight for different times. The larger launch angle produces the higher trajectory and the longer flight time.
+
+Thus, the equality of horizontal ranges does not imply identical projectile trajectories.
 
 High-resolution PDF:
 
@@ -573,11 +716,43 @@ High-resolution PDF:
 
 ### Figure 2. Variation of the initial speed
 
-The initial speed is varied while the launch angle remains fixed.
+The launch angle is kept fixed at
 
-The figure shows the projectile trajectories for different initial speeds. Continuous curves correspond to the analytical solution, whereas circular markers represent the numerical integration of the governing differential equations. As in the previous figure, the numerical results accurately reproduce the analytical solution throughout the projectile motion.
+$$
+\theta=45^\circ,
+$$
+
+while the initial speed is varied.
+
+The values considered are
+
+$$
+v_0=10,\;15,\;20,\;25,\;30\ \mathrm{m/s}.
+$$
+
+Continuous curves represent the analytical solution and circular markers represent the numerical integration.
 
 ![Variation of the initial speed](ideal_velocity_variation.png)
+
+As the initial speed increases, both the maximum height and the horizontal range increase.
+
+The analytical expressions show that
+
+$$
+R\propto v_0^2
+$$
+
+and
+
+$$
+H_{\max}\propto v_0^2.
+$$
+
+Consequently, the effect of increasing the initial speed is not linear: doubling $v_0$ produces a fourfold increase in both the horizontal range and the maximum height when the launch angle remains fixed.
+
+Because $\theta$ is unchanged, all trajectories have the same initial direction, but their spatial scales increase strongly with $v_0$.
+
+Again, the numerical markers reproduce the analytical curves throughout the complete motion.
 
 High-resolution PDF:
 
@@ -585,6 +760,64 @@ High-resolution PDF:
 
 ---
 
+### Figure 3. Horizontal-range map $R(v_0,\theta)$
+
+The analytical expression for the horizontal range allows the simultaneous exploration of the launch angle and the initial speed:
+
+$$
+R(v_0,\theta)=\frac{v_0^2}{g}\sin(2\theta).
+$$
+
+The parameter ranges considered are
+
+$$
+15^\circ\leq\theta\leq75^\circ
+$$
+
+and
+
+$$
+10\leq v_0\leq40\ \mathrm{m/s}.
+$$
+
+The color scale represents the horizontal range $R$, while the contour lines indicate regions of equal range.
+
+![Horizontal-range map](ideal_range_map.png)
+
+The map makes two important properties particularly clear.
+
+First, the horizontal range increases strongly with $v_0$, consistent with the quadratic dependence
+
+$$
+R\propto v_0^2.
+$$
+
+Second, the optimal angle remains
+
+$$
+\boxed{\theta_{\mathrm{opt}}=45^\circ}
+$$
+
+for every value of the initial speed.
+
+The optimal-angle line is therefore vertical in the $(\theta,v_0)$ parameter space.
+
+The map also exhibits symmetry around
+
+$$
+\theta=45^\circ.
+$$
+
+For every fixed value of $v_0$, complementary launch angles produce equal horizontal ranges.
+
+This two-dimensional representation therefore summarizes, in a single figure, the dependence of the horizontal range on both initial parameters and provides the reference behavior against which the corresponding range maps of the linear- and quadratic-drag models can be compared.
+
+High-resolution PDF:
+
+[Download PDF](ideal_range_map.pdf)
+
+---
+
 ## 📚 7. References
 
-Classical mechanics, projectile-motion, and numerical-method references will be incorporated after the theoretical section of the associated article is finalized.
+Classical mechanics, projectile-motion, computational-physics, and numerical-method references will be incorporated after the theoretical development of the associated manuscript is finalized.
