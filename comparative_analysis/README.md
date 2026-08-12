@@ -104,13 +104,13 @@ $$
 Thus, under the selected conditions, the projectile reaches approximately
 
 $$
-72.2\%
+72.2 \%
 $$
 
 of the ideal maximum range, corresponding to a reduction of approximately
 
 $$
-27.8\%.
+27.8 \%.
 $$
 
 For the quadratic-drag case,
@@ -126,13 +126,13 @@ $$
 The corresponding range is therefore approximately
 
 $$
-\boxed{43.7\%}
+\boxed{43.7 \%}
 $$
 
 of the ideal maximum, representing a reduction of approximately
 
 $$
-\boxed{56.3\%}.
+\boxed{56.3 \%}.
 $$
 
 These results can be summarized as
