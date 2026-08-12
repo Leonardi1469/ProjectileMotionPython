@@ -140,25 +140,25 @@ $$
 the horizontal equation becomes
 
 $$
-\boxed{\frac{d^2x}{dt^2}=-\kappa\sqrt{v_x^2+v_y^2}\,v_x},
+\boxed{\frac{d^2x}{dt^2}=-\kappa\sqrt{v_x^2+v_y^2}\ v_x},
 $$
 
 whereas the vertical equation becomes
 
 $$
-\boxed{\frac{d^2y}{dt^2}=-g-\kappa\sqrt{v_x^2+v_y^2}\,v_y}.
+\boxed{\frac{d^2y}{dt^2}=-g-\kappa\sqrt{v_x^2+v_y^2}\ v_y}.
 $$
 
 Equivalently,
 
 $$
-\boxed{\frac{dv_x}{dt}=-\kappa\sqrt{v_x^2+v_y^2}\,v_x}
+\boxed{\frac{dv_x}{dt}=-\kappa\sqrt{v_x^2+v_y^2}\ v_x}
 $$
 
 and
 
 $$
-\boxed{\frac{dv_y}{dt}=-g-\kappa\sqrt{v_x^2+v_y^2}\,v_y}.
+\boxed{\frac{dv_y}{dt}=-g-\kappa\sqrt{v_x^2+v_y^2}\ v_y}.
 $$
 
 These equations reveal the fundamental mathematical difference between linear and quadratic drag.
@@ -172,7 +172,7 @@ $$
 depends only on $v_x$, whereas in the quadratic model
 
 $$
-\frac{dv_x}{dt}=-\kappa\sqrt{v_x^2+v_y^2}\,v_x
+\frac{dv_x}{dt}=-\kappa\sqrt{v_x^2+v_y^2}\ v_x
 $$
 
 depends simultaneously on both velocity components.
@@ -196,13 +196,13 @@ $$
 The system
 
 $$
-\frac{dv_x}{dt}=-\kappa\sqrt{v_x^2+v_y^2}\,v_x
+\frac{dv_x}{dt}=-\kappa\sqrt{v_x^2+v_y^2}\ v_x
 $$
 
 and
 
 $$
-\frac{dv_y}{dt}=-g-\kappa\sqrt{v_x^2+v_y^2}\,v_y
+\frac{dv_y}{dt}=-g-\kappa\sqrt{v_x^2+v_y^2}\ v_y
 $$
 
 is nonlinear because the unknown velocity components appear inside the square root and are multiplied by themselves.
@@ -246,13 +246,13 @@ The equations remain linear and independent, allowing exact analytical solutions
 For quadratic drag,
 
 $$
-\frac{dv_x}{dt}=-\kappa\sqrt{v_x^2+v_y^2}\,v_x
+\frac{dv_x}{dt}=-\kappa\sqrt{v_x^2+v_y^2}\ v_x
 $$
 
 and
 
 $$
-\frac{dv_y}{dt}=-g-\kappa\sqrt{v_x^2+v_y^2}\,v_y.
+\frac{dv_y}{dt}=-g-\kappa\sqrt{v_x^2+v_y^2}\ v_y.
 $$
 
 The equations are nonlinear and mutually coupled.
@@ -298,7 +298,7 @@ This is particularly relevant when studying the effect of varying $v_0$, because
 The horizontal velocity satisfies
 
 $$
-\frac{dv_x}{dt}=-\kappa\sqrt{v_x^2+v_y^2}\,v_x.
+\frac{dv_x}{dt}=-\kappa\sqrt{v_x^2+v_y^2}\ v_x.
 $$
 
 For $\kappa>0$ and $v_x>0$, the right-hand side is always negative.
@@ -320,7 +320,7 @@ Unlike the linear-drag model, however, this decrease is not a simple exponential
 The vertical equation is
 
 $$
-\frac{dv_y}{dt}=-g-\kappa\sqrt{v_x^2+v_y^2}\,v_y.
+\frac{dv_y}{dt}=-g-\kappa\sqrt{v_x^2+v_y^2}\ v_y.
 $$
 
 During ascent,
