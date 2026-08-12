@@ -27,8 +27,7 @@ The only force acting on the projectile is gravity:
 $$
 \boxed{
 \frac{d^2\mathbf{r}}{dt^2}
-=
--g\hat{\mathbf{y}}
+= -g\hat{\mathbf{y}}
 }.
 $$
 
@@ -65,8 +64,7 @@ the equation of motion becomes
 $$
 \boxed{
 \frac{d^2\mathbf{r}}{dt^2}
-=
--g\hat{\mathbf{y}}
+=-g\hat{\mathbf{y}}
 -\gamma\mathbf{v}
 }.
 $$
