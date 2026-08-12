@@ -95,14 +95,13 @@ The ratio with respect to the ideal result is
 $$
 \frac{R_{\max}^{\mathrm{linear}}}
 {R_{\max}^{\mathrm{ideal}}}
-=
-\frac{29.45}{40.77}
+= \frac{29.45}{40.77}
 \approx 0.722.
 $$
 
-Therefore, for the selected parameters, the linear-drag projectile reaches approximately $72.2\%$ of the ideal maximum range.
+Therefore, for the selected parameters, the linear-drag projectile reaches approximately $72.2 \%$ of the ideal maximum range.
 
-The corresponding reduction is approximately $27.8\%$.
+The corresponding reduction is approximately $27.8 \%$.
 
 For the quadratic-drag case,
 
@@ -115,8 +114,7 @@ The corresponding ratio is
 $$
 \frac{R_{\max}^{\mathrm{quadratic}}}
 {R_{\max}^{\mathrm{ideal}}}
-=
-\frac{17.83}{40.77}
+= \frac{17.83}{40.77}
 \approx 0.437.
 $$
 
