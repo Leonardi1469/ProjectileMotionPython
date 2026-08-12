@@ -142,8 +142,7 @@ For a projectile launched and landing at the same height, the ideal horizontal r
 
 $$
 R_{\mathrm{ideal}}(\theta)
-=
-\frac{v_0^2}{g}\sin(2\theta).
+= \frac{v_0^2}{g}\sin(2\theta).
 $$
 
 For fixed $v_0$ and $g$, maximizing the range is equivalent to maximizing
@@ -183,16 +182,14 @@ The ideal range satisfies
 
 $$
 R_{\mathrm{ideal}}(\theta)
-=
-R_{\mathrm{ideal}}(90^\circ-\theta).
+=R_{\mathrm{ideal}}(90^\circ-\theta).
 $$
 
 This follows from the trigonometric relation
 
 $$
 \sin(2\theta)
-=
-\sin\left(180^\circ-2\theta\right).
+=\sin\left(180^\circ-2\theta\right).
 $$
 
 Therefore, complementary launch angles produce the same horizontal range in the ideal model.
@@ -201,8 +198,7 @@ For example,
 
 $$
 R_{\mathrm{ideal}}(30^\circ)
-=
-R_{\mathrm{ideal}}(60^\circ).
+=R_{\mathrm{ideal}}(60^\circ).
 $$
 
 This symmetry is visible in the ideal $R(\theta)$ curve, whose maximum occurs at
@@ -233,42 +229,35 @@ For the reference case shown in the figure,
 
 $$
 \theta_{\mathrm{opt}}^{\mathrm{ideal}}
-=
-45.0^\circ,
+=45.0^\circ,
 $$
 
 $$
 \theta_{\mathrm{opt}}^{\mathrm{linear}}
-=
-40.4^\circ,
+=40.4^\circ,
 $$
 
 and
 
 $$
 \theta_{\mathrm{opt}}^{\mathrm{quadratic}}
-=
-38.7^\circ.
+=38.7^\circ.
 $$
 
 The displacement relative to the ideal result is therefore
 
 $$
 \Delta\theta_{\mathrm{linear}}
-=
-45.0^\circ-40.4^\circ
-=
-4.6^\circ,
+=45.0^\circ-40.4^\circ
+=4.6^\circ,
 $$
 
 and
 
 $$
 \Delta\theta_{\mathrm{quadratic}}
-=
-45.0^\circ-38.7^\circ
-=
-6.3^\circ.
+=45.0^\circ-38.7^\circ
+=6.3^\circ.
 $$
 
 These particular numerical values depend on the parameters used in the calculation.
@@ -277,16 +266,14 @@ More generally, for the linear-drag model the optimal angle depends on quantitie
 
 $$
 \theta_{\mathrm{opt}}^{\mathrm{linear}}
-=
-\theta_{\mathrm{opt}}(v_0,\gamma).
+=\theta_{\mathrm{opt}}(v_0,\gamma).
 $$
 
 For quadratic drag,
 
 $$
 \theta_{\mathrm{opt}}^{\mathrm{quadratic}}
-=
-\theta_{\mathrm{opt}}(v_0,\kappa).
+=\theta_{\mathrm{opt}}(v_0,\kappa).
 $$
 
 This differs fundamentally from the ideal result, for which the optimal angle is $45^\circ$ under equal launch and landing heights.
@@ -402,8 +389,7 @@ At the level of the horizontal range, this behavior can be expressed as
 $$
 \lim_{\gamma\rightarrow0}
 R_{\mathrm{linear}}(\theta,\gamma)
-=
-R_{\mathrm{ideal}}(\theta),
+=R_{\mathrm{ideal}}(\theta),
 $$
 
 and
@@ -411,8 +397,7 @@ and
 $$
 \lim_{\kappa\rightarrow0}
 R_{\mathrm{quadratic}}(\theta,\kappa)
-=
-R_{\mathrm{ideal}}(\theta).
+=R_{\mathrm{ideal}}(\theta).
 $$
 
 This limiting behavior is important because it connects the three levels of modeling.
@@ -429,8 +414,7 @@ For the ideal model,
 
 $$
 R_{\mathrm{ideal}}
-=
-\frac{v_0^2}{g}\sin(2\theta).
+=\frac{v_0^2}{g}\sin(2\theta).
 $$
 
 At fixed launch angle,
@@ -563,16 +547,14 @@ The velocity equations are
 
 $$
 \frac{dv_x}{dt}
-=
--\kappa v v_x
+=-\kappa v v_x
 $$
 
 and
 
 $$
 \frac{dv_y}{dt}
-=
--g-\kappa v v_y.
+=-g-\kappa v v_y.
 $$
 
 The horizontal and vertical velocity components are therefore nonlinearly coupled through $v$.
