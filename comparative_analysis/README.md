@@ -88,8 +88,7 @@ The ideal model provides the reference maximum range
 
 $$
 R_{\max}^{\mathrm{ideal}}
-=
-40.77\ \mathrm{m}.
+= 40.77\ \mathrm{m}.
 $$
 
 For the linear-drag case,
@@ -97,8 +96,7 @@ For the linear-drag case,
 $$
 \frac{R_{\max}^{\mathrm{linear}}}
 {R_{\max}^{\mathrm{ideal}}}
-=
-\frac{29.45}{40.77}
+= \frac{29.45}{40.77}
 \approx
 0.722.
 $$
@@ -120,8 +118,7 @@ For the quadratic-drag case,
 $$
 \frac{R_{\max}^{\mathrm{quadratic}}}
 {R_{\max}^{\mathrm{ideal}}}
-=
-\frac{17.83}{40.77}
+= \frac{17.83}{40.77}
 \approx
 0.437.
 $$
