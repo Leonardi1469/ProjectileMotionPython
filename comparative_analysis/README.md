@@ -99,9 +99,9 @@ $$
 \approx 0.722.
 $$
 
-Therefore, for the selected parameters, the linear-drag projectile reaches approximately $72.2$ % of the ideal maximum range.
+Therefore, for the selected parameters, the linear-drag projectile reaches approximately $72.2$% of the ideal maximum range.
 
-The corresponding reduction is approximately $27.8 \%$.
+The corresponding reduction is approximately $27.8$%.
 
 For the quadratic-drag case,
 
@@ -118,17 +118,17 @@ $$
 \approx 0.437.
 $$
 
-Thus, for the selected parameters, the quadratic-drag projectile reaches approximately $43.7\%$ of the ideal maximum range.
+Thus, for the selected parameters, the quadratic-drag projectile reaches approximately $43.7$% of the ideal maximum range.
 
-The corresponding reduction is approximately $56.3\%$.
+The corresponding reduction is approximately $56.3$%.
 
 The results for this reference case can be summarized as follows:
 
 | Model | $R_{\max}$ | Fraction of ideal range | Reduction |
 |:---|---:|---:|---:|
-| Ideal | $40.77\ \mathrm{m}$ | $1.000$ | $0\%$ |
-| Linear drag | $29.45\ \mathrm{m}$ | $0.722$ | $27.8\%$ |
-| Quadratic drag | $17.83\ \mathrm{m}$ | $0.437$ | $56.3\%$ |
+| Ideal | $40.77\ \mathrm{m}$ | $1.000$ | $0$% |
+| Linear drag | $29.45\ \mathrm{m}$ | $0.722$ | $27.8$% |
+| Quadratic drag | $17.83\ \mathrm{m}$ | $0.437$ | $56.3$% |
 
 These percentages characterize only the particular reference conditions used in the figure.
 
