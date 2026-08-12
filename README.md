@@ -1,6 +1,6 @@
 # Projectile Motion in Python
 
-*A computational and pedagogical framework for projectile motion using Python.*
+*From analytical solutions to numerical integration: A computational and pedagogical framework for projectile motion.*
 
 ---
 
@@ -8,7 +8,7 @@
 
 This repository accompanies the article
 
-**“A computational and pedagogical framework for projectile motion using Python visualizations.”**
+**“From analytical solutions to numerical integration: A computational and pedagogical framework for projectile motion.”**
 
 Its purpose is to provide a reproducible computational framework for studying projectile motion through analytical derivations, numerical integration, and Python visualizations.
 
