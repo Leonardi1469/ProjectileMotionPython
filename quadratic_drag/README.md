@@ -418,13 +418,13 @@ $$
 $$
 
 $$
-\boxed{\frac{dv_x}{dt}=-\kappa\sqrt{v_x^2+v_y^2}\,v_x},
+\boxed{\frac{dv_x}{dt}=-\kappa\sqrt{v_x^2+v_y^2}\ v_x},
 $$
 
 and
 
 $$
-\boxed{\frac{dv_y}{dt}=-g-\kappa\sqrt{v_x^2+v_y^2}\,v_y}.
+\boxed{\frac{dv_y}{dt}=-g-\kappa\sqrt{v_x^2+v_y^2}\ v_y}.
 $$
 
 The corresponding state vector is
