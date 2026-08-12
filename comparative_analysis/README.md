@@ -744,31 +744,9 @@ The comparison of the three models leads to the following conclusions.
 
 3. The complementary-angle symmetry of the ideal model is generally lost in dissipative motion.
 
-4. The ideal result
+4. The ideal result $\theta_{\mathrm{opt}} = 45^\circ$ is not universal. In dissipative motion, the optimal angle depends on the physical parameters of the problem.
 
-   $$
-   \theta_{\mathrm{opt}} = 45^\circ
-   $$
-
-   is not universal. In dissipative motion, the optimal angle depends on the physical parameters of the problem.
-
-5. For the specific reference conditions
-
-   $$
-   v_0 = 20.0\ \mathrm{m/s},
-   $$
-
-   $$
-   \gamma = 0.2\ \mathrm{s^{-1}},
-   $$
-
-   and
-
-   $$
-   \kappa = 0.05\ \mathrm{m^{-1}},
-   $$
-
-   the optimal angles are $45.0^\circ$, $40.4^\circ$, and $38.7^\circ$ for the ideal, linear-drag, and quadratic-drag models, respectively.
+5. For the specific reference conditions $v_0 = 20.0\ \mathrm{m/s}$, $\gamma = 0.2\ \mathrm{s^{-1}}$, and $\kappa = 0.05\ \mathrm{m^{-1}}$, the optimal angles are $45.0^\circ$, $40.4^\circ$, and $38.7^\circ$ for the ideal, linear-drag, and quadratic-drag models, respectively.
 
 6. For the same reference case, the corresponding maximum ranges are $40.77\ \mathrm{m}$, $29.45\ \mathrm{m}$, and $17.83\ \mathrm{m}$.
 
