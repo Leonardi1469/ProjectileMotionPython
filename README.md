@@ -178,7 +178,7 @@ This progression illustrates a central idea of computational physics: analytical
 
 This repository serves as supplementary computational material for the article
 
-**“A computational and pedagogical framework for projectile motion using Python visualizations.”**
+**“From analytical solutions to numerical integration: A computational and pedagogical framework for projectile motion.”**
 
 The theoretical formulations, numerical implementations, parameter studies, and figure-generation scripts provided here support the analysis developed in the manuscript.
 
