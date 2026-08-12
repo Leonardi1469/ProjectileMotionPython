@@ -1,6 +1,6 @@
 # Projectile Motion in Python
 
-*From analytical solutions to numerical integration: A computational and pedagogical framework for projectile motion.*
+*Analytical and numerical tools for exploring projectile motion with increasing physical complexity.*
 
 ---
 
