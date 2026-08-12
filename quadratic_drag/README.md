@@ -623,7 +623,7 @@ while the launch angle is varied.
 The values considered are
 
 $$
-\theta=15^\circ,\;30^\circ,\;45^\circ,\;60^\circ,\;75^\circ.
+\theta=15^\circ,\ 30^\circ,\ 45^\circ,\ 60^\circ,\ 75^\circ.
 $$
 
 The trajectories correspond entirely to the numerical integration of the nonlinear equations of motion.
@@ -679,7 +679,7 @@ while the initial speed is varied.
 The values considered are
 
 $$
-v_0=10,\;15,\;20,\;25,\;30\ \mathrm{m/s}.
+v_0=10,\ 15,\ 20,\ 25,\ 30\ \mathrm{m/s}.
 $$
 
 ![Variation of the initial speed](quadratic_velocity_variation.png)
@@ -741,7 +741,7 @@ while the quadratic-drag parameter is varied.
 The values considered are
 
 $$
-\kappa=0,\;0.02,\;0.05,\;0.10,\;0.20\ \mathrm{m^{-1}}.
+\kappa=0,\ 0.02,\ 0.05,\ 0.10,\ 0.20\ \mathrm{m^{-1}}.
 $$
 
 The case
