@@ -761,7 +761,7 @@ Both the maximum height and horizontal range decrease.
 The reduction of the range is particularly pronounced because the horizontal velocity is continuously damped according to
 
 $$
-\frac{dv_x}{dt}=-\kappa\sqrt{v_x^2+v_y^2}\,v_x.
+\frac{dv_x}{dt}=-\kappa\sqrt{v_x^2+v_y^2}\ v_x.
 $$
 
 The effect is strongest during the portions of the trajectory where the projectile speed is largest.
