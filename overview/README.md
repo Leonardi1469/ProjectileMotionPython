@@ -102,8 +102,7 @@ the equation of motion becomes
 $$
 \boxed{
 \frac{d^2\mathbf{r}}{dt^2}
-=
--g\hat{\mathbf{y}}
+=-g\hat{\mathbf{y}}
 -\kappa|\mathbf{v}|\mathbf{v}
 }.
 $$
@@ -112,14 +111,12 @@ In component form,
 
 $$
 \frac{dv_x}{dt}
-=
--\kappa\sqrt{v_x^2+v_y^2}\,v_x,
+=-\kappa\sqrt{v_x^2+v_y^2}\,v_x,
 $$
 
 $$
 \frac{dv_y}{dt}
-=
--g-\kappa\sqrt{v_x^2+v_y^2}\,v_y.
+=-g-\kappa\sqrt{v_x^2+v_y^2}\,v_y.
 $$
 
 In this case, the horizontal and vertical velocity components are coupled through the instantaneous speed
