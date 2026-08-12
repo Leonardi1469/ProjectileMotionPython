@@ -490,13 +490,13 @@ The quadratic-drag model must recover ideal projectile motion when the drag para
 The governing equations are
 
 $$
-\frac{dv_x}{dt}=-\kappa\sqrt{v_x^2+v_y^2}\,v_x
+\frac{dv_x}{dt}=-\kappa\sqrt{v_x^2+v_y^2}\ v_x
 $$
 
 and
 
 $$
-\frac{dv_y}{dt}=-g-\kappa\sqrt{v_x^2+v_y^2}\,v_y.
+\frac{dv_y}{dt}=-g-\kappa\sqrt{v_x^2+v_y^2}\ v_y.
 $$
 
 Taking the limit
@@ -508,13 +508,13 @@ $$
 the drag terms vanish directly:
 
 $$
-\lim_{\kappa\rightarrow0}\kappa\sqrt{v_x^2+v_y^2}\,v_x=0
+\lim_{\kappa\rightarrow0}\kappa\sqrt{v_x^2+v_y^2}\ v_x=0
 $$
 
 and
 
 $$
-\lim_{\kappa\rightarrow0}\kappa\sqrt{v_x^2+v_y^2}\,v_y=0.
+\lim_{\kappa\rightarrow0}\kappa\sqrt{v_x^2+v_y^2}\ v_y=0.
 $$
 
 Therefore,
