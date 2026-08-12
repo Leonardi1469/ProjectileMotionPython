@@ -99,7 +99,7 @@ $$
 \approx 0.722.
 $$
 
-Therefore, for the selected parameters, the linear-drag projectile reaches approximately $72.2 %$ of the ideal maximum range.
+Therefore, for the selected parameters, the linear-drag projectile reaches approximately $72.2$ % of the ideal maximum range.
 
 The corresponding reduction is approximately $27.8 \%$.
 
