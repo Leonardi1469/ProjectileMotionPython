@@ -747,7 +747,7 @@ The comparison of the three models leads to the following conclusions.
 4. The ideal result
 
    $$
-   \theta_{\mathrm{opt}}=45^\circ
+   \theta_{\mathrm{opt}} = 45^\circ
    $$
 
    is not universal. In dissipative motion, the optimal angle depends on the physical parameters of the problem.
@@ -755,17 +755,17 @@ The comparison of the three models leads to the following conclusions.
 5. For the specific reference conditions
 
    $$
-   v_0=20.0\ \mathrm{m/s},
+   v_0 = 20.0\ \mathrm{m/s},
    $$
 
    $$
-   \gamma=0.2\ \mathrm{s^{-1}},
+   \gamma = 0.2\ \mathrm{s^{-1}},
    $$
 
    and
 
    $$
-   \kappa=0.05\ \mathrm{m^{-1}},
+   \kappa = 0.05\ \mathrm{m^{-1}},
    $$
 
    the optimal angles are $45.0^\circ$, $40.4^\circ$, and $38.7^\circ$ for the ideal, linear-drag, and quadratic-drag models, respectively.
