@@ -926,9 +926,3 @@ $$
 $$
 
 This transition is one of the central pedagogical ideas of the repository.
-
----
-
-## 📚 9. References
-
-Classical mechanics, projectile-motion, aerodynamic-drag, computational-physics, and numerical-method references will be incorporated after the theoretical development of the associated manuscript is finalized.
