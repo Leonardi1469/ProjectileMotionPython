@@ -343,22 +343,26 @@ The corresponding PNG and PDF files are included in this folder to provide direc
 
 ## 📚 References
 
-The theoretical and computational framework implemented in this repository is based on standard treatments of projectile motion, air resistance, and numerical methods. Some relevant references are:
+The theoretical, computational, and pedagogical framework implemented in this repository is supported by the following references:
 
-1. N. de Mestre, *The Mathematics of Projectiles in Sport*, Cambridge University Press, Cambridge (1990).
+1. M. Alonso and E. J. Finn, *Fundamental University Physics, Vol. 1: Mechanics*, Revised ed., Addison-Wesley, Reading, MA (1992).
 
-2. W. W. Hackborn, “Motion through air: What a drag,” *Canadian Applied Mathematics Quarterly* **14**, 285–298 (2006).
+2. D. Halliday, R. Resnick, and J. Walker, *Fundamentals of Physics*, Extended, 10th ed., Wiley, Hoboken, NJ (2014).
 
-3. W. W. Hackborn, “Projectile motion: Resistance is fertile,” *The American Mathematical Monthly* **115**, 813–819 (2008).
+3. J. R. Taylor, *Classical Mechanics*, University Science Books, Sausalito, CA (2005).
 
-4. C. H. Belgacem, “Range and flight time of quadratic resisted projectile motion using the Lambert W function,” *European Journal of Physics* **35**, 055025 (2014).
+4. E. Brown, “Modeling theory applied: Modeling instruction in introductory physics,” *American Journal of Physics* **76** (2008) 1155. https://doi.org/10.1119/1.2983148
 
-5. M. H. Jensen and G. V. Johnson, “A simple derivation of the equations of projectile motion with quadratic drag,” *European Journal of Physics* **44**, 065003 (2023).
+5. J. R. Taylor, *An Introduction to Error Analysis: The Study of Uncertainties in Physical Measurements*, 2nd ed., University Science Books, Sausalito, CA (1997).
 
-6. J. R. Taylor, *Classical Mechanics*, University Science Books, Sausalito, CA (2005).
+6. C. M. Morales, J. H. Muñoz, and C. E. Vera, “Some remarks on projectile motion with a linear resistance force,” *European Journal of Physics* **44** (2023) 065003. https://doi.org/10.1088/1361-6404/acf0a5
 
-7. E. Hairer, S. P. Nørsett, and G. Wanner, *Solving Ordinary Differential Equations I: Nonstiff Problems*, 2nd ed., Springer, Berlin (1993).
+7. F. Jobunga et al., “Analytical solution of the projectile motion under a linear drag force,” *Journal of Applied Mathematics* **2024** (2024) 8881003. https://doi.org/10.1155/2024/8881003
 
-8. SciPy Community, *SciPy: Fundamental Algorithms for Scientific Computing in Python*, available through the SciPy documentation.
+8. P. Chudinov, C. Ellyshev, and Y. Barykin, “Analytical construction of the projectile motion trajectory in fluid,” *Momentum* **62** (2021) 79. https://doi.org/10.29012/2005-6810-2021-62
+
+9. F. B. Wadsworth et al., “Projectile motion: experimental datasets and classroom exercises,” *Physics Education* **60** (2025) 045024. https://doi.org/10.1088/1361-6552/adc2c5
+
+10. F. B. Wadsworth et al., “Numerical solution of the Schrödinger equation for radiation-matter interaction using the Runge-Kutta method implemented in Python,” *Revista Mexicana de Física E* **23** (2026) 020202. https://doi.org/10.31349/RevMexFisE.23.020202
 
 For a complete discussion of the analytical solutions, numerical implementation, parameter exploration, and pedagogical applications of the three projectile-motion models, see the accompanying manuscript.
