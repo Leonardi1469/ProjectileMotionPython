@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[6]:
-
-
 # ============================================================
 # Projectile Motion in Python
 # Quadratic-drag model: variation of the launch angle
@@ -144,10 +138,3 @@ plt.savefig(
 )
 
 plt.show()
-
-
-# In[ ]:
-
-
-
-
