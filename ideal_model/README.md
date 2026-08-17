@@ -815,9 +815,3 @@ This two-dimensional representation therefore summarizes, in a single figure, th
 High-resolution PDF:
 
 [Download PDF](ideal_range_map.pdf)
-
----
-
-## 📚 7. References
-
-Classical mechanics, projectile-motion, computational-physics, and numerical-method references will be incorporated after the theoretical development of the associated manuscript is finalized.
