@@ -343,4 +343,22 @@ The corresponding PNG and PDF files are included in this folder to provide direc
 
 ## 📚 References
 
-The references associated with this overview will be incorporated after the accompanying manuscript is finalized.
+The theoretical and computational framework implemented in this repository is based on standard treatments of projectile motion, air resistance, and numerical methods. Some relevant references are:
+
+1. N. de Mestre, *The Mathematics of Projectiles in Sport*, Cambridge University Press, Cambridge (1990).
+
+2. W. W. Hackborn, “Motion through air: What a drag,” *Canadian Applied Mathematics Quarterly* **14**, 285–298 (2006).
+
+3. W. W. Hackborn, “Projectile motion: Resistance is fertile,” *The American Mathematical Monthly* **115**, 813–819 (2008).
+
+4. C. H. Belgacem, “Range and flight time of quadratic resisted projectile motion using the Lambert W function,” *European Journal of Physics* **35**, 055025 (2014).
+
+5. M. H. Jensen and G. V. Johnson, “A simple derivation of the equations of projectile motion with quadratic drag,” *European Journal of Physics* **44**, 065003 (2023).
+
+6. J. R. Taylor, *Classical Mechanics*, University Science Books, Sausalito, CA (2005).
+
+7. E. Hairer, S. P. Nørsett, and G. Wanner, *Solving Ordinary Differential Equations I: Nonstiff Problems*, 2nd ed., Springer, Berlin (1993).
+
+8. SciPy Community, *SciPy: Fundamental Algorithms for Scientific Computing in Python*, available through the SciPy documentation.
+
+For a complete discussion of the analytical solutions, numerical implementation, parameter exploration, and pedagogical applications of the three projectile-motion models, see the accompanying manuscript.
