@@ -1200,9 +1200,3 @@ This map will later provide a direct point of comparison with the corresponding 
 High-resolution PDF:
 
 [Download PDF](linear_range_map.pdf)
-
----
-
-## 📚 7. References
-
-Classical mechanics, projectile-motion, linear-drag, special-function, computational-physics, and numerical-method references will be incorporated after the theoretical development of the associated manuscript is finalized.
